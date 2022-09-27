@@ -1,7 +1,10 @@
 import React, { useLayoutEffect } from "react";
-// import outsideClick from "../helpers/outsideClick";
+import OutsideClickHandler from "react-outside-click-handler";
+import { NavLink } from "react-router-dom";
+import logo from "../img/logo.png";
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(true);
+  const [isScrolling, setIsScrolling] = React.useState(false);
   function checkNavOpenClose() {
     if (window.innerWidth < 900) {
       setIsOpen(false);
@@ -17,23 +20,63 @@ export default function Header() {
   return (
     <>
       <div className="header__nav__bar__container">
-        <div className="nav__bar__wraper">
-          <div className="nav__bar__logo">svg</div>
+        <div
+          className={
+            isScrolling
+              ? "nav__bar__wraper nav__bar__wraper__active"
+              : "nav__bar__wraper"
+          }
+        >
+          <div className="nav__bar__logo">
+            <img src={logo} alt="logo" />
+          </div>
           {isOpen ? (
-            <div className="nav__bar__contant">
-              <a href="#" className="nav__contant__links">
-                Home
-              </a>
-              <a href="#" className="nav__contant__links">
-                About
-              </a>
-              <a href="#" className="nav__contant__links">
-                Products
-              </a>
-              <a href="#" className="nav__contant__links">
-                Contact Us
-              </a>
-            </div>
+            <OutsideClickHandler
+              onOutsideClick={() => {
+                if (window.innerWidth < 900) {
+                  setIsOpen(false);
+                }
+              }}
+            >
+              <div className="nav__bar__contant">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    if (window.innerWidth < 900) {
+                      setIsOpen(false);
+                    }
+                  }}
+                  className="nav__contant__links"
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  onClick={() => {
+                    if (window.innerWidth < 900) {
+                      setIsOpen(false);
+                    }
+                  }}
+                  className="nav__contant__links"
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  to="/product"
+                  onClick={() => {
+                    if (window.innerWidth < 900) {
+                      setIsOpen(false);
+                    }
+                  }}
+                  className="nav__contant__links"
+                >
+                  Products
+                </NavLink>
+                <NavLink to="/contact" className="nav__contant__links">
+                  Contact Us
+                </NavLink>
+              </div>
+            </OutsideClickHandler>
           ) : null}
           <div className="nav__bar__btn__menu">
             <button
