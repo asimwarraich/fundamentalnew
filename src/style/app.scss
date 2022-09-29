@@ -79,16 +79,44 @@ body {
 }
 .landing__main__banner {
   width: 100%;
-  position: relative;
+  // position: relative;
 }
 .landing__main__banner video {
-  margin-top: 5.3em;
   width: 100%;
-  height: 400px;
+  height: 630px;
+}
+.main__video__btn__container {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main__video__btn {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b04600;
+  border-radius: 80px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.main__video__btn::before {
   position: absolute;
-  top: 50%;
+  content: "";
+  background-color: #b04600;
+  opacity: 0.4;
+  height: 140px;
+  width: 140px;
+  border-radius: 80px;
+  z-index: -0.7;
+}
+.main__video__btn svg {
+  height: 40px;
 }
 .landing__about__section {
   width: 100%;

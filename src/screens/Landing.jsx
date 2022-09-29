@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import aboutimg from "../img/aboutimg.png";
 import aboutcloth from "../img/aboutcloth.png";
-import product from "../img/product.png";
+import gifproduct from "../img/gifproduct.gif";
 import prologo from "../img/prologo.png";
 import subbg from "../img/subbg.png";
 import subimg from "../img/subimg.png";
@@ -23,8 +23,23 @@ export default function Landing() {
     <>
       <Header />
       <div className="landing__main__banner">
-        <video width="300" controls src={videoone} type="video/mp4"></video>
-        <button className="main__video__btn">svg</button>
+        <video src={videoone} type="video/mp4"></video>
+        <div className="main__video__btn__container">
+          <button className="main__video__btn">
+            <svg
+              width="36"
+              height="41"
+              viewBox="0 0 36 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34.5 17.9019C36.5 19.0566 36.5 21.9434 34.5 23.0981L5.25001 39.9856C3.25001 41.1403 0.750002 39.6969 0.750002 37.3875L0.750003 3.61251C0.750004 1.30311 3.25 -0.140273 5.25 1.01443L34.5 17.9019Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="landing__about__section">
         <div className="landing__about__section__overlay">
@@ -73,7 +88,7 @@ export default function Landing() {
       </div>
       <div className="landing__product__container">
         <div className="landing__product__container__img">
-          <img src={product} alt="product" />
+          <img src={gifproduct} alt="product" />
         </div>
         <div className="products__contant__wraper">
           <div className="products__contant__wraper__logo">
@@ -82,16 +97,25 @@ export default function Landing() {
             </div>
           </div>
           <div className="products__overlay__contant__wraper">
-            <div className="products__contant__wraper__heading">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out"
+              className="products__contant__wraper__heading"
+            >
               EXPLORE OUR PRODUCTS
             </div>
-            <div className="products__contant__wraper__cards__containaer">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              className="products__contant__wraper__cards__containaer"
+            >
               <HomeProductsCard
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1500"
-                data-aos-easing="ease-in-out"
                 svg={
                   <svg width="115" height="96" viewBox="0 0 115 96" fill="none">
                     <path
@@ -158,7 +182,14 @@ export default function Landing() {
       <div className="landing__services__section">
         <img src={aboutimg} alt="about" />
         <div className="landing__services__container">
-          <div className="landing__services__section__heading">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            className="landing__services__section__heading"
+          >
             SERVICE WE OFFER
           </div>
           <Swiper
@@ -203,10 +234,22 @@ export default function Landing() {
       </div>
       <div className="quotation__about__secion">
         <div className="quotation__about__wraper">
-          <div className="qua__img__left">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            className="qua__img__left"
+          >
             <img src={qua} alt="quotation" />
           </div>
-          <div className="qua__right__contant">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="qua__right__contant"
+          >
             <div className="qua__overlay">
               <img src={quaover} alt="quotation" />
             </div>
@@ -228,7 +271,14 @@ export default function Landing() {
           <img src={subbg} alt="" />
         </div>
         <div className="sustain__overlay__contant__wraper">
-          <div className="sus__contant__wraper">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            className="sus__contant__wraper"
+          >
             <div className="sustain__section__contant__heading">
               SUSTAINABILITY
             </div>
@@ -264,7 +314,14 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className="sustain__section__img">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1700"
+            data-aos-easing="ease-in-out"
+            className="sustain__section__img"
+          >
             <img src={subimg} alt="SUSTAINABILITY" />
           </div>
         </div>
