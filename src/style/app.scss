@@ -81,11 +81,11 @@ body {
   width: 100%;
   position: relative;
   height: fit-content;
-  padding-top: 5em;
+  padding-top: 5.4em;
 }
 .landing__main__banner video {
   width: 100%;
-  max-height: 600px;
+  max-height: 700px;
 }
 .main__video__btn__container {
   position: absolute;
@@ -144,7 +144,7 @@ body {
   right: 0;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0em 2em;
+  padding: 2em;
 }
 .about__overlay__laft__contant {
   width: 50%;
@@ -341,7 +341,7 @@ body {
 }
 
 .services__card__wraper img {
-  width: 100%;
+  // width: 100%;
   max-height: 420px;
   border-radius: 8px;
 }
@@ -474,7 +474,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
-  padding: 0em 1em;
+  padding: 2em 1em;
 }
 .qua__img__left {
   position: relative;
@@ -489,6 +489,7 @@ body {
 }
 
 .qua__overlay img {
+  max-width: 100%;
   height: 370px;
 }
 .qua__contant__text {
@@ -683,12 +684,12 @@ body {
 .footer__main__container {
   width: 100%;
   position: relative;
-  background: url("../img/footerbg.png") no-repeat;
+  background: url("../img/footerbg.png");
   border-top-right-radius: 200px;
-  left: 0;
-  right: 0;
+  background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .footer__contant__container {
@@ -822,7 +823,6 @@ body {
   }
   .products__contant__wraper__card {
     width: 45%;
-    z-index: 999;
   }
   .sustain__overlay__contant__wraper {
     flex-direction: column-reverse;
@@ -866,6 +866,7 @@ body {
 @media (max-width: 950px) {
   .quotation__about__wraper {
     flex-direction: column-reverse;
+    margin-top: 8em;
   }
 
   .about__overlay__laft__contant {
@@ -883,6 +884,15 @@ body {
   }
 }
 @media (max-width: 750px) {
+  .footer__contact__col {
+    min-width: 50%;
+  }
+  .footer__contact__col:first-child {
+    min-width: 50%;
+  }
+  .quotation__about__wraper {
+    margin-top: 16em;
+  }
   .contact__map__wraper {
     padding: 0em 1em;
     height: 400px;
@@ -895,6 +905,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .landing__services__container {
+    margin-top: 24em;
+  }
   .qua__img__left img {
     display: none;
   }
@@ -924,6 +937,12 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .qua__overlay img {
+    height: 400px;
+  }
+  .qua__right__contant__heading {
+    font-size: 22px;
+  }
   .contact__overlay__svg svg {
     height: 50px;
   }
@@ -950,6 +969,19 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .about__overlay__contant__wraper {
+    top: 3%;
+  }
+  .about__overlay__laft__contant__sub__heading {
+    padding: 1em 0em;
+  }
+  .main__video__btn {
+    height: 70px;
+    width: 70px;
+  }
+  .main__video__btn svg {
+    height: 30px;
+  }
   .landing__services__section {
     margin-top: 25.5em;
   }

@@ -320,7 +320,7 @@ function LandingServicesSection() {
         >
           SERVICE WE OFFER
         </div>
-        <div style={{ padding: "0em 2em" }}>
+        <div style={{ padding: "0em 2em", width: "100%" }}>
           <Swiper
             className="services__cards__container"
             spaceBetween={40}
