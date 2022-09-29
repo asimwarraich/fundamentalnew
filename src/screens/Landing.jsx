@@ -251,13 +251,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
-      {/* <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat totam
-        quas nihil laudantium, dicta molestias? Voluptate odit accusantium
-        consectetur iure eum, minus neque praesentium, expedita perferendis
-        inventore dolor fugit adipisci.
-      </div> */}
+      <Footer />
     </>
   );
 }
