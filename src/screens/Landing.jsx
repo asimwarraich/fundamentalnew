@@ -320,76 +320,76 @@ function LandingServicesSection() {
         >
           SERVICE WE OFFER
         </div>
-       <div style={{padding:"0em 2em"}}>
-       <Swiper
-          className="services__cards__container"
-          spaceBetween={40}
-          slidesPerView={slidesPerView}
-        >
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardone}
-              title="Product Research
+        <div style={{ padding: "0em 2em" }}>
+          <Swiper
+            className="services__cards__container"
+            spaceBetween={40}
+            slidesPerView={slidesPerView}
+          >
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardone}
+                title="Product Research
               & Development "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardtwo}
-              title="In-Line Quality Inspections "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardthre}
-              title="Your 
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardtwo}
+                title="In-Line Quality Inspections "
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardthre}
+                title="Your 
               One-Stop Shop   "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardfour}
-              title="Production 
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardfour}
+                title="Production 
               Follow-up"
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardone}
-              title="Product Research
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardone}
+                title="Product Research
               & Development "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardtwo}
-              title="In-Line Quality Inspections "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardthre}
-              title="Your 
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardtwo}
+                title="In-Line Quality Inspections "
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardthre}
+                title="Your 
               One-Stop Shop   "
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesCard
-              img={servicecardfour}
-              title="Production 
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServicesCard
+                img={servicecardfour}
+                title="Production 
               Follow-up"
-              text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-            />
-          </SwiperSlide>
-        </Swiper>
-       </div>
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );
