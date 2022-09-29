@@ -206,9 +206,9 @@ export default function Landing() {
         </div>
       </div>
       <div className="sustain__section">
-        {/* <div className="sus__right__bg__img">
+        <div className="sus__right__bg__img">
           <img src={subbg} alt="" />
-        </div> */}
+        </div>
         <div className="sustain__overlay__contant__wraper">
           <div className="sus__contant__wraper">
             <div className="sustain__section__contant__heading">
@@ -252,7 +252,12 @@ export default function Landing() {
         </div>
       </div>
       {/* <Footer /> */}
-      skjffhfdhihfshfi
+      {/* <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat totam
+        quas nihil laudantium, dicta molestias? Voluptate odit accusantium
+        consectetur iure eum, minus neque praesentium, expedita perferendis
+        inventore dolor fugit adipisci.
+      </div> */}
     </>
   );
 }
