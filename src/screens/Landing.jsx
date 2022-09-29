@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../compounts/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,13 +19,22 @@ import servicecardthre from "../img/servicecardthre.png";
 import servicecardfour from "../img/servicecardfour.png";
 import videoone from "../img/videoone.mp4";
 export default function Landing() {
+  const [videoPaused, setVideoPaused] = useState(true);
   return (
     <>
       <Header />
       <div className="landing__main__banner">
-        <video src={videoone} type="video/mp4"></video>
+        <video src={videoone} type="video/mp4" id="video" />
         <div className="main__video__btn__container">
-          <button className="main__video__btn">
+          <button
+            className="main__video__btn"
+            onClick={() => {
+              const video = document.getElementById("video");
+              setVideoPaused(false);
+              if (video.paused) video.play();
+              else video.pause();
+            }}
+          >
             <svg
               width="36"
               height="41"
