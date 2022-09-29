@@ -3,6 +3,7 @@ import Header from "../compounts/Header";
 import aboutvi from "../img/aboutvi.png";
 import aboutimg from "../img/aboutimg.png";
 import aboutmain from "../img/aboutmain.png";
+import Footer from "../compounts/Footer";
 export default function About() {
   return (
     <>
@@ -60,6 +61,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

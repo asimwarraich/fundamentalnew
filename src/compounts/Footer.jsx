@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import footerbg from "../img/footerbg.png";
-import logo from "../img/logo.png";
+import footerlogo from "../img/footerlogo.png";
 export default function Footer() {
   return (
     <>
@@ -11,9 +11,9 @@ export default function Footer() {
         </div>
         <div className="footer__contant__container">
           <div className="footer__contact__col">
-            <div className="footer__contact__logo">
-              <img src={logo} alt="logo" />
-            </div>
+            <NavLink to="/" className="footer__contact__logo">
+              <img src={footerlogo} alt="logo" />
+            </NavLink>
             <div className="footer__contact__text">
               Fundamental Textile ensures ready-to-wear clothing and uniforms
               for industrial clothing, healthcare, uniforms and casual
@@ -26,7 +26,7 @@ export default function Footer() {
             <NavLink to="/" className="footer__contact__col__link">
               Home
             </NavLink>
-            <NavLink to="/" className="footer__contact__col__link">
+            <NavLink to="/about" className="footer__contact__col__link">
               About
             </NavLink>
             <NavLink to="/" className="footer__contact__col__link">
@@ -59,11 +59,13 @@ export default function Footer() {
           </div>
           <div className="footer__contact__col">
             <div className="footer__contact__col__heading">Social info</div>
-            <div className="footer__contact__col__link">+32 434 54554543</div>
-            <div className="footer__contact__col__link">
+            <div className="footer__contact__col__link__info">
+              +32 434 54554543
+            </div>
+            <div className="footer__contact__col__link__info">
               fundamentaltextiles@gmail.com
             </div>
-            <div className="footer__contact__col__link">
+            <div className="footer__contact__col__link__info">
               www.fundamentaltextiles.com
             </div>
             <div className="footer__contact__col__button">Contact Us</div>

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../compounts/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import banner from "../img/banner.png";
 import aboutimg from "../img/aboutimg.png";
 import aboutcloth from "../img/aboutcloth.png";
 import product from "../img/product.png";
