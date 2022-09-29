@@ -31,7 +31,14 @@ export default function Landing() {
           <img src={aboutimg} alt="about" />
         </div>
         <div className="about__overlay__contant__wraper">
-          <div className="about__overlay__laft__contant">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            className="about__overlay__laft__contant"
+          >
             <div className="about__overlay__laft__contant__heading__upper">
               About Us
             </div>
@@ -52,7 +59,14 @@ export default function Landing() {
               ethical production practices, quality control and timely delivery.
             </div>
           </div>
-          <div className="about__overlay__right__contant">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            className="about__overlay__right__contant"
+          >
             <img src={aboutcloth} alt="about" />
           </div>
         </div>
@@ -73,6 +87,11 @@ export default function Landing() {
             </div>
             <div className="products__contant__wraper__cards__containaer">
               <HomeProductsCard
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
                 svg={
                   <svg width="115" height="96" viewBox="0 0 115 96" fill="none">
                     <path
