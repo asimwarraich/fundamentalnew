@@ -6,9 +6,6 @@ export default function Footer() {
   return (
     <>
       <div className="footer__main__container">
-        <div className="footer__container__img">
-          <img src={footerbg} alt="Footer" />
-        </div>
         <div className="footer__contant__container">
           <div className="footer__contact__col">
             <NavLink to="/" className="footer__contact__logo">

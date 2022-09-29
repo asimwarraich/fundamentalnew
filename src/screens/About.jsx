@@ -4,26 +4,33 @@ import aboutvi from "../img/aboutvi.png";
 import aboutimg from "../img/aboutimg.png";
 import aboutmain from "../img/aboutmain.png";
 import Footer from "../compounts/Footer";
+import videoone from "../img/videoone.mp4";
 export default function About() {
   return (
     <>
       <Header />
       <div className="about__main__container">
-        <div className="about__main__container__video">
-          <img src={aboutvi} alt="about" />
-          <div className="about__main__video__svg">
-            <svg
-              width="36"
-              height="41"
-              viewBox="0 0 36 41"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M34.5 17.9019C36.5 19.0566 36.5 21.9434 34.5 23.0981L5.25001 39.9856C3.25001 41.1403 0.750002 39.6969 0.750002 37.3875L0.750003 3.61251C0.750004 1.30311 3.25 -0.140273 5.25 1.01443L34.5 17.9019Z"
-                fill="white"
-              />
-            </svg>
+        <div className="about__main__banner">
+          <video
+            className=" about__main__banner__video"
+            src={videoone}
+            type="video/mp4"
+          ></video>
+          <div className="main__video__btn__container">
+            <button className="main__video__btn">
+              <svg
+                width="36"
+                height="41"
+                viewBox="0 0 36 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.5 17.9019C36.5 19.0566 36.5 21.9434 34.5 23.0981L5.25001 39.9856C3.25001 41.1403 0.750002 39.6969 0.750002 37.3875L0.750003 3.61251C0.750004 1.30311 3.25 -0.140273 5.25 1.01443L34.5 17.9019Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
