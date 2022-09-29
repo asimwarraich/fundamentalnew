@@ -16,6 +16,14 @@ export default function Header() {
   useLayoutEffect(() => {
     checkNavOpenClose();
     window.addEventListener("resize", checkNavOpenClose);
+    window.addEventListener("scroll", () => {
+      checkNavOpenClose();
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    });
   }, []);
   return (
     <>
