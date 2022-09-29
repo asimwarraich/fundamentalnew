@@ -19,17 +19,17 @@ export default function Header() {
   }, []);
   return (
     <>
-      <div className="header__nav__bar__container">
-        <div
-          className={
-            isScrolling
-              ? "nav__bar__wraper nav__bar__wraper__active"
-              : "nav__bar__wraper"
-          }
-        >
-          <div className="nav__bar__logo">
+      <div
+        className={
+          isScrolling
+            ? "nav__bar__wraper nav__bar__wraper__active"
+            : "nav__bar__wraper"
+        }
+      >
+        <div className="header__nav__bar__container">
+          <NavLink to="/" className="nav__bar__logo">
             <img src={logo} alt="logo" />
-          </div>
+          </NavLink>
           {isOpen ? (
             <OutsideClickHandler
               onOutsideClick={() => {
@@ -72,7 +72,7 @@ export default function Header() {
                 >
                   Products
                 </NavLink>
-                <NavLink to="/contact" className="nav__contant__links">
+                <NavLink to="/Contact" className="nav__contant__links">
                   Contact Us
                 </NavLink>
               </div>
