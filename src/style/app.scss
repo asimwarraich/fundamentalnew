@@ -27,6 +27,7 @@ body {
   background-color: #b04600;
   border-radius: 6px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .header__nav__bar__container {
@@ -89,7 +90,7 @@ body {
 }
 .main__video__btn__container {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -120,6 +121,7 @@ body {
 }
 .main__video__btn svg {
   height: 40px;
+  z-index: 1;
 }
 .landing__about__section {
   width: 100%;
@@ -476,6 +478,7 @@ body {
   background-color: #f8f8f8;
   padding: 2em 1em;
 }
+
 .qua__img__left {
   position: relative;
   margin-right: -2em;
@@ -507,6 +510,7 @@ body {
   width: 80%;
   line-height: 30px;
   text-align: center;
+  margin: 0.5em 0em;
 }
 .qua__right__contant__heading span {
   color: $secondary;
@@ -514,55 +518,112 @@ body {
 .qua__right__contant__sub__heading {
   font-size: 16px;
   text-align: center;
-  line-height: 16px;
+  line-height: 22px;
 }
+.about__wraper__page {
+  background-color: $color;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.about__police__contant__text {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em 5em;
+}
+.about__police__contant__text * {
+  color: white;
+}
+
+.police__img__right img {
+  height: 600px;
+  position: relative;
+  margin-left: -10em;
+  margin-top: -5em;
+}
+.police__left__contant {
+  position: relative;
+}
+.police__overlay {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: -6em;
+}
+.police__overlay img {
+  width: 100%;
+  height: 400px;
+}
+.police__right__contant__heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 12px 0px;
+}
+.police__right__contant__sub__heading {
+  display: flex;
+  justify-items: flex-start;
+  line-height: 24px;
+  font-size: 18px;
+}
+
 .footer__containe {
   background-color: $secondary;
 }
-.about__main__container {
+.about__header__container {
+  position: relative;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 5em;
 }
-.about__main__banner {
+
+.about__main__header__video {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  color: #b04600;
+  opacity: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.about__main__banner__video {
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #b04600;
-  opacity: 1;
 }
 .about__section__container {
   width: 100%;
   position: relative;
 }
-.about__section__container__bg {
+.about__section__wraper {
+  position: absolute;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+// .about__section__container__bg {
+//   display: flex;
+//   justify-content: flex-end;
+// }
 .about__section__container__bg img {
+  width: 100%;
   height: 500px;
 }
 .about__section__container__right__contant {
   width: 50%;
 }
-.about__section__wraper {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  max-width: 1440px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
+
 .about__section__container__img {
   position: relative;
   width: 50%;
@@ -577,8 +638,8 @@ body {
   background-color: #e8e8e8;
   bottom: 0%;
   right: 3%;
-  width: 100%;
-  height: 200px;
+  width: 190%;
+  height: 220px;
   z-index: -999;
   border-top-right-radius: 30px;
 }
@@ -589,13 +650,13 @@ body {
   border-top-right-radius: 30px;
   bottom: 0%;
   right: 3%;
-  width: 100%;
-  height: 160px;
+  width: 190%;
+  height: 180px;
   z-index: 0;
 }
 
 .about__section__container__img img {
-  height: 350px;
+  height: 440px;
   z-index: 99;
   padding-right: 2em;
 }
@@ -610,6 +671,7 @@ body {
 }
 .about__section__container__right__contant__sub__heading {
   font-size: 16px;
+  line-height: 20px;
 }
 .contact__main__banner {
   width: 100%;
@@ -649,8 +711,39 @@ body {
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 3em;
   flex-wrap: wrap;
+  margin-top: 2em;
+}
+.contact__card {
+  width: 25%;
+  // min-width: 170px;
+  min-height: 230px;
+  border: 1px solid $secondary;
+  background-color: white;
+  z-index: 1;
+  padding: 2em;
+  margin: 0.6em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.contact__card__svg svg {
+  height: 70px;
+  margin-top: 2em;
+}
+.contact__card__heading {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 12px 0px;
+}
+.contact__card__text {
+  font-size: 18px;
+}
+.contact__card:hover {
+  background-color: $secondary;
+  color: white;
+}
+.contact__card:hover * {
+  color: white;
 }
 .contact__map__main__container {
   width: 100%;
@@ -689,7 +782,6 @@ body {
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .footer__contant__container {
@@ -800,7 +892,135 @@ body {
   border: 1px solid $primary;
   border-radius: 400px;
 }
+.about__vision__container {
+  width: 100%;
+  position: relative;
+}
+.about__vision__container img {
+  width: 100%;
+  height: 700px;
+}
+.vision__and__mission {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em 0em;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.vision__container__left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  min-width: 200px;
+  padding: 1em 2em;
+}
+.mid__line__about__vision {
+  height: 230px;
+  width: 2px;
+  border-radius: 12px;
+  background-color: $color;
+  margin: 0em 2em;
+  opacity: 0.5;
+}
+.vision__container__vision__svg {
+  position: relative;
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  height: 100px;
+  width: 100px;
+  background-color: #b04600;
+  border-radius: 100px;
+}
+.vision__container__vision__svg svg {
+  height: 130px;
+  padding: 1em;
+  z-index: 1;
+}
+.vision__container__vision__svg::before {
+  position: absolute;
+  content: "";
+  background-color: $secondary;
+  opacity: 0.4;
+  height: 130px;
+  width: 130px;
+  border-radius: 80px;
+}
+.vision__container__vision__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+.vision__container__vision__info {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+.about__team__section {
+  width: 100%;
+  margin: 4em 0em;
+  background-color: white;
+  background-image: linear-gradient(#ffffff, #dbdbdb);
+  padding: 2em;
+}
+
+.about__team__heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.about__team__section__wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about__team__section__wraper__card {
+  width: 30%;
+  padding: 2em;
+}
+.about__team__section__wraper__card__svg img {
+  height: 180px;
+  position: relative;
+  margin-bottom: -3em;
+}
+.about__team__section__wraper__card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 22px 0px;
+}
+.about__team__section__wraper__card__info {
+  font-size: 16px;
+  line-height: 20px;
+}
 @media (max-width: 1200px) {
+  .about__police__contant__text {
+    top: 20%;
+  }
+  .police__img__right {
+    display: none;
+  }
+  .police__overlay {
+    margin: 1em;
+  }
+  .about__wraper__page {
+    padding: 1em;
+    justify-content: center;
+  }
   .footer__contact__col {
     min-width: 35%;
     margin: 16px;
@@ -815,6 +1035,22 @@ body {
   }
 }
 @media (max-width: 1000px) {
+  .about__section__container__bg img {
+    height: 900px;
+  }
+  .about__section__wraper {
+    flex-direction: column;
+  }
+  .about__section__container__right__contant {
+    width: 100%;
+    padding: 2em 1em;
+  }
+  .contact__card {
+    width: 47%;
+  }
+  .footer__main__container {
+    overflow: hidden;
+  }
   .sustain__section {
     height: 1300px;
   }
@@ -846,6 +1082,10 @@ body {
 }
 
 @media (max-width: 900px) {
+  .main__video__btn::before {
+    height: 100px;
+    width: 100px;
+  }
   .about__overlay__contant__wraper {
     top: 10%;
   }
@@ -864,6 +1104,26 @@ body {
   }
 }
 @media (max-width: 950px) {
+  .about__team__section__wraper__card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .vision__container__left {
+    padding: 12px;
+  }
+  .vision__container__vision__svg svg {
+    height: 70px;
+    margin: 12px 0px;
+  }
+  .vision__container__vision__title {
+    font-size: 20px;
+  }
+  .vision__container__vision__info {
+    font-size: 14px;
+  }
   .quotation__about__wraper {
     flex-direction: column-reverse;
     margin-top: 8em;
@@ -884,6 +1144,27 @@ body {
   }
 }
 @media (max-width: 750px) {
+  .vision__and__mission {
+    position: unset;
+  }
+  .mid__line__about__vision {
+    display: none;
+  }
+  .vision__container__left {
+    margin: 0.7em;
+  }
+  .about__vision__container img {
+    display: none;
+  }
+  .about__section__container__img img {
+    height: 360px;
+  }
+  .about__section__container__bg img {
+    height: 820px;
+  }
+  .contact__card {
+    width: 90%;
+  }
   .footer__contact__col {
     min-width: 50%;
   }
@@ -895,7 +1176,7 @@ body {
   }
   .contact__map__wraper {
     padding: 0em 1em;
-    height: 400px;
+    height: 600px;
   }
   .about__overlay__laft__contant__heading {
     font-size: 27px;
@@ -905,6 +1186,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .vision__container__left {
+    padding: 0px;
+  }
   .landing__services__container {
     margin-top: 24em;
   }
@@ -969,6 +1253,42 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .about__section__container__img {
+    padding: 2em 0em 1em 0em;
+  }
+  .about__section__container__right__contant__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about__section__wraper {
+    position: unset;
+  }
+  .about__section__container__bg {
+    display: none;
+  }
+  .about__section__container__img img {
+    height: 250px;
+  }
+  .about__section__container__img::before {
+    height: 120px;
+  }
+  .about__section__container__img::after {
+    height: 150px;
+  }
+  .contact__card__svg svg {
+    height: 49px;
+    margin-top: 1em;
+  }
+  .contact__card__heading {
+    padding: 7px 0px;
+    font-size: 18px;
+  }
+  .contact__card__text {
+    font-size: 14px;
+  }
+  .contact__card {
+    min-height: 180px;
+  }
   .about__overlay__contant__wraper {
     top: 3%;
   }

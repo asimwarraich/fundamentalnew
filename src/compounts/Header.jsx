@@ -50,6 +50,7 @@ export default function Header() {
                 <NavLink
                   to="/"
                   onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
                     if (window.innerWidth < 900) {
                       setIsOpen(false);
                     }
@@ -61,6 +62,7 @@ export default function Header() {
                 <NavLink
                   to="/about"
                   onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
                     if (window.innerWidth < 900) {
                       setIsOpen(false);
                     }
@@ -72,6 +74,7 @@ export default function Header() {
                 <NavLink
                   to="/product"
                   onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
                     if (window.innerWidth < 900) {
                       setIsOpen(false);
                     }
@@ -80,7 +83,16 @@ export default function Header() {
                 >
                   Products
                 </NavLink>
-                <NavLink to="/Contact" className="nav__contant__links">
+                <NavLink
+                  to="/Contact"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    if (window.innerWidth < 900) {
+                      setIsOpen(false);
+                    }
+                  }}
+                  className="nav__contant__links"
+                >
                   Contact Us
                 </NavLink>
               </div>

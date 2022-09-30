@@ -320,7 +320,14 @@ function LandingServicesSection() {
         >
           SERVICE WE OFFER
         </div>
-        <div style={{ padding: "0em 2em", width: "100%" }}>
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          style={{ padding: "0em 2em", width: "100%" }}
+        >
           <Swiper
             className="services__cards__container"
             spaceBetween={40}
