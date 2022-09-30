@@ -204,6 +204,9 @@ export default function About() {
         </div>
       </div>
       <div className="about__services__card__container">
+        <div className="about__services__card__container__img">
+          <img src="" alt="" />
+        </div>
         <div className="about__services__card__container__heading">
           SERVICE WE OFFER
         </div>
