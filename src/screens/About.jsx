@@ -7,7 +7,8 @@ import videoone from "../img/videoone.mp4";
 import abouttwo from "../img/abouttwo.png";
 import quapolice from "../img/quapolice.png";
 import Strategic from "../img/Strategic.png";
-import { LandingServicesSection } from "./LandingServicesSection";
+import VendorSwiper from "../components/VendorSwiper";
+
 import pak from "../img/pak.png";
 import uk from "../img/uk.png";
 export default function About() {
@@ -202,7 +203,11 @@ export default function About() {
           <img src={abouttwo} alt="quotation" />
         </div>
       </div>
-      <LandingServicesSection />
+      <div className="about__services__card__container">
+        <div className="about__services__card__container__heading">
+          SERVICE WE OFFER
+        </div>
+      </div>
       <div className="about__team__section">
         <div className="about__team__heading">OUR TEAM</div>
         <div className="about__team__section__wraper">
@@ -235,7 +240,10 @@ export default function About() {
         </div>
       </div>
       <div className="Strategic__container">
-        {/* <img src={aboutimg} alt="Strategic" /> */}
+        <div className="Strategic__container__banner">
+          <img src={aboutimg} alt="Strategic" />
+        </div>
+
         <div className="Strategic__container__contant">
           <div className="Strategic__container__contant__text">
             <div className="Strategic__container__contant__text__heading">
@@ -249,10 +257,24 @@ export default function About() {
             </div>
           </div>
           <div className="Strategic__container__contant__img">
-            <img src={Strategic} alt="" />
+            <img src={Strategic} alt="about" />
           </div>
         </div>
       </div>
+      <div className="Vendor__container">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          className="Vendor__container__heading"
+        >
+          Vendor Certifications
+        </div>
+        <VendorSwiper />
+      </div>
+
       <Footer />
     </>
   );

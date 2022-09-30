@@ -520,6 +520,10 @@ body {
   text-align: center;
   line-height: 22px;
 }
+.about__swiper__container {
+  width: 100%;
+  // margin: 2em;
+}
 .about__wraper__page {
   background-color: $color;
   width: 100%;
@@ -591,7 +595,6 @@ body {
   border-bottom-right-radius: 140px;
   color: #b04600;
   opacity: 1;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -898,7 +901,7 @@ body {
 }
 .about__vision__container img {
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 .vision__and__mission {
   width: 100%;
@@ -977,10 +980,9 @@ body {
 }
 .about__team__section {
   width: 100%;
-  margin: 4em 0em;
   background-color: white;
   background-image: linear-gradient(#ffffff, #dbdbdb);
-  padding: 2em;
+  margin-top: 4em;
 }
 
 .about__team__heading {
@@ -997,6 +999,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 2em 0em;
 }
 .about__team__section__wraper__card {
   width: 30%;
@@ -1020,8 +1023,16 @@ body {
 }
 .Strategic__container {
   width: 100%;
+  position: relative;
+}
+.Strategic__container img {
+  width: 100%;
+  height: 700px;
+  transform: rotate(180deg);
 }
 .Strategic__container__contant {
+  position: absolute;
+  top: 10%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1029,7 +1040,9 @@ body {
   margin: 3em;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 4em 2em;
+  left: 0;
+  right: 0;
+  padding: 3em 2em;
 }
 .Strategic__container__contant__text {
   width: 50%;
@@ -1054,6 +1067,37 @@ body {
 }
 .Strategic__container__contant__img img {
   height: 450px;
+}
+.Vendor__container {
+  width: 100%;
+  margin: 1em 0em 5em 0em;
+}
+.Vendor__container__heading {
+  font-size: 30px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0em;
+}
+.Vendor__card__wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.vendor__card__wraper__container {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Vendor__card__wraper__img img {
+  height: 140px;
+}
+.Vendor__card__wraper__info {
+  font-size: 16px;
 }
 @media (max-width: 1200px) {
   .Strategic__container__contant__text__heading {
@@ -1228,6 +1272,12 @@ body {
   }
 }
 @media (max-width: 750px) {
+  .Strategic__container__banner img {
+    display: none;
+  }
+  .Strategic__container__contant {
+    position: relative;
+  }
   .vision__and__mission {
     position: unset;
   }
@@ -1270,6 +1320,15 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .vision__container__left {
+    width: 80%;
+  }
+  .Strategic__container__contant__text__heading {
+    width: 100%;
+  }
+  .Strategic__container__contant__img img {
+    height: 260px;
+  }
   .vision__container__left {
     padding: 0px;
   }
@@ -1340,6 +1399,19 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .Vendor__container__heading {
+    font-size: 22px;
+  }
+  .Strategic__container__contant__img {
+    width: 85%;
+  }
+  .Strategic__container__contant__text__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .Strategic__container__contant__text__sun__heading {
+    font-size: 16px;
+  }
   .about__header__container {
     padding-top: 8em;
   }
