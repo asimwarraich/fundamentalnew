@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../compounts/Header";
-import Footer from "../compounts/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import contactbaner from "../img/contactbaner.png";
 import aboutimg from "../img/aboutimg.png";
-import ContactCards from "../compounts/ContactCards";
+import ContactCards from "../components/ContactCards";
 export default function Contact() {
   return (
     <>

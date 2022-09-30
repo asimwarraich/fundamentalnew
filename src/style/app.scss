@@ -581,14 +581,14 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 5em;
+  padding-top: 12em;
 }
 
 .about__main__header__video {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 90px;
-  border-bottom-right-radius: 90px;
+  border-top-left-radius: 140px;
+  border-bottom-right-radius: 140px;
   color: #b04600;
   opacity: 1;
 
@@ -939,8 +939,12 @@ body {
   padding: 1em;
   height: 100px;
   width: 100px;
-  background-color: #b04600;
+  background-color: #161515;
   border-radius: 100px;
+  transition: 300ms ease-in-out;
+}
+.vision__container__vision__svg:hover {
+  background-color: #b04600;
 }
 .vision__container__vision__svg svg {
   height: 130px;
@@ -955,6 +959,11 @@ body {
   height: 130px;
   width: 130px;
   border-radius: 80px;
+  display: none;
+}
+.vision__container__vision__svg:hover::before {
+  display: flex;
+  transition: 300ms ease-in-out;
 }
 .vision__container__vision__title {
   font-size: 26px;
@@ -993,10 +1002,12 @@ body {
   width: 30%;
   padding: 2em;
 }
+
 .about__team__section__wraper__card__svg img {
   height: 180px;
   position: relative;
   margin-bottom: -3em;
+  opacity: 0.4;
 }
 .about__team__section__wraper__card__title {
   font-size: 24px;
@@ -1007,7 +1018,50 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+.Strategic__container {
+  width: 100%;
+}
+.Strategic__container__contant {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em 2em;
+}
+.Strategic__container__contant__text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Strategic__container__contant__text__heading {
+  font-size: 30px;
+  font-weight: 700;
+  width: 50%;
+  line-height: 30px;
+  margin: 0.6em 0em;
+}
+.Strategic__container__contant__text__sun__heading {
+  font-size: 18px;
+  line-height: 22px;
+  width: 80%;
+}
+.Strategic__container__contant__img {
+  width: 50%;
+}
+.Strategic__container__contant__img img {
+  height: 450px;
+}
 @media (max-width: 1200px) {
+  .Strategic__container__contant__text__heading {
+    width: 60%;
+  }
+  .Strategic__container__contant__text__sun__heading {
+    width: 95%;
+  }
   .about__police__contant__text {
     top: 20%;
   }
@@ -1091,19 +1145,49 @@ body {
   }
   .nav__bar__btn__menu {
     display: flex;
+    z-index: 9999;
   }
   .nav__bar__contant {
     position: absolute;
+    justify-content: center;
     flex-direction: column;
     background-color: #b04600;
     color: white;
-    margin-top: 3em;
     right: 0%;
     width: 180px;
-    border-radius: 12px;
+    height: 100vh;
+    top: 0px;
+    animation: nav__bar__contant__animation 300ms both;
+    transform-origin: right;
+  }
+  @keyframes nav__bar__contant__animation {
+    from {
+      opacity: 0;
+      transform: translateX(180px);
+      overflow: hidden;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+      overflow: auto;
+    }
   }
 }
 @media (max-width: 950px) {
+  .Strategic__container__contant__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Strategic__container__contant {
+    flex-direction: column-reverse;
+  }
+  .Strategic__container__contant__img img {
+    height: 350px;
+  }
+  .Strategic__container__contant__text {
+    width: 100%;
+  }
   .about__team__section__wraper__card {
     width: 90%;
     display: flex;
@@ -1221,6 +1305,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .nav__bar__logo img {
+    height: 40px;
+  }
   .qua__overlay img {
     height: 400px;
   }
@@ -1253,6 +1340,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .about__header__container {
+    padding-top: 8em;
+  }
   .about__section__container__img {
     padding: 2em 0em 1em 0em;
   }
