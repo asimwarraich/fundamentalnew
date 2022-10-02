@@ -72,7 +72,7 @@ export default function Header() {
                   About
                 </NavLink>
                 <NavLink
-                  to="/product"
+                  to="/worker"
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                     if (window.innerWidth < 900) {

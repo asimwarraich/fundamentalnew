@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import aboutimg from "../img/aboutimg.png";
+// import aboutimg from "../img/aboutimg.png";
 import ServicesCard from "../components/ServicesCard";
 import servicecardone from "../img/servicecardone.png";
 import servicecardtwo from "../img/servicecardtwo.png";
@@ -27,13 +27,12 @@ export function LandingServicesSection() {
 
   return (
     <div className="landing__services__section">
-      <img src={aboutimg} alt="about" />
       <div className="landing__services__container">
         <div
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1500"
+          data-aos-duration="900"
           data-aos-easing="ease-in-out"
           className="landing__services__section__heading"
         >
