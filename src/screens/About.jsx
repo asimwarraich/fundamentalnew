@@ -96,7 +96,7 @@ export default function About() {
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
-              data-aos-duration="1500"
+              data-aos-duration="1200"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >

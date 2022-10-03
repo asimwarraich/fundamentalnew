@@ -187,11 +187,11 @@ export default function Landing() {
       <div className="sustain__section">
         <div className="sustain__overlay__contant__wraper">
           <div
-            // data-aos="fade-up"
-            // data-aos-offset="200"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-out"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             className="sus__contant__wraper"
           >
             <div className="sustain__section__contant__heading">
