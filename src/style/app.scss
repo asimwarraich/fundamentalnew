@@ -1448,7 +1448,7 @@ body {
   }
   .worker__container__left {
     padding: 2em 0em;
-    width: 90%;
+    width: 100%;
   }
   .Strategic__container__contant__img {
     display: flex;
@@ -1618,7 +1618,7 @@ body {
     padding: 0em 2em;
   }
   .sus__contant__wraper {
-    padding: 0em 1em;
+    padding: 1em 1em;
   }
   .sustain__section__contant__sub__heading__points__item {
     margin: 4px 0px;
@@ -1661,6 +1661,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .products__contant__wraper {
+    margin-top: 2em;
+  }
   .sustain__overlay__contant__wraper {
     padding: 0px 20px;
   }
@@ -1693,7 +1696,7 @@ body {
     height: 260px;
   }
   .worker__container__righr img {
-    height: 355px;
+    height: 320px;
   }
   .worker__container {
     padding: 1.5em 0em;
