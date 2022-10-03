@@ -1,8 +1,15 @@
 import React, { useLayoutEffect } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import DropDown from "./DropDown";
 import logo from "../img/logo.png";
 export default function Header() {
+  const dropDownlistItem = [
+    { name: "produst", link: "/knitted" },
+    { name: "worker", link: "/worker" },
+    { name: "worker", link: "/worker" },
+  ];
+  const [isDropDownOpen, setIsDropDownOpen] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(true);
   const [isScrolling, setIsScrolling] = React.useState(false);
   function checkNavOpenClose() {
@@ -35,9 +42,9 @@ export default function Header() {
         }
       >
         <div className="header__nav__bar__container">
-          <NavLink to="/" className="nav__bar__logo">
+          <Link to="/" className="nav__bar__logo">
             <img src={logo} alt="logo" />
-          </NavLink>
+          </Link>
           {isOpen ? (
             <OutsideClickHandler
               onOutsideClick={() => {
@@ -49,6 +56,7 @@ export default function Header() {
               <div className="nav__bar__contant">
                 <NavLink
                   to="/"
+                  end
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                     if (window.innerWidth < 900) {
@@ -59,6 +67,7 @@ export default function Header() {
                 >
                   Home
                 </NavLink>
+
                 <NavLink
                   to="/about"
                   onClick={() => {
@@ -71,18 +80,28 @@ export default function Header() {
                 >
                   About
                 </NavLink>
-                <NavLink
-                  to="/worker"
+                <a
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
-                    if (window.innerWidth < 900) {
-                      setIsOpen(false);
-                    }
+
+                    setIsDropDownOpen(!isDropDownOpen);
                   }}
                   className="nav__contant__links"
                 >
+                  {isDropDownOpen ? (
+                    <OutsideClickHandler
+                      onOutsideClick={() => {
+                        setIsDropDownOpen(false);
+                      }}
+                    >
+                      <DropDown
+                        dropdownlist={dropDownlistItem}
+                        isOpen={isDropDownOpen}
+                      />
+                    </OutsideClickHandler>
+                  ) : null}
                   Products
-                </NavLink>
+                </a>
                 <NavLink
                   to="/Contact"
                   onClick={() => {

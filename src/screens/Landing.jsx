@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-
-// import aboutimg from "../img/aboutimg.png";
 import aboutcloth from "../img/aboutcloth.png";
 import prologo from "../img/prologo.png";
-import subbg from "../img/subbg.png";
 import subimg from "../img/subimg.png";
 import qua from "../img/qua.png";
 import quaover from "../img/quaover.png";
@@ -41,9 +38,6 @@ export default function Landing() {
         </div>
       </div>
       <div className="landing__about__section">
-        {/* <div className="landing__about__section__overlay">
-          <img src={aboutimg} alt="about" />
-        </div> */}
         <div className="about__overlay__contant__wraper">
           <div
             data-aos="fade-right"
@@ -191,16 +185,13 @@ export default function Landing() {
         </div>
       </div>
       <div className="sustain__section">
-        <div className="sus__right__bg__img">
-          <img src={subbg} alt="" />
-        </div>
         <div className="sustain__overlay__contant__wraper">
           <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            // data-aos="fade-up"
+            // data-aos-offset="200"
+            // data-aos-delay="50"
+            // data-aos-duration="1000"
+            // data-aos-easing="ease-in-out"
             className="sus__contant__wraper"
           >
             <div className="sustain__section__contant__heading">

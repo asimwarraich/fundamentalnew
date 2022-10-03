@@ -13,3 +13,7 @@ export default function ServicesCard({ img, title, text }) {
     </>
   );
 }
+
+// .sustain__section {
+//   height: 1166px;
+// }

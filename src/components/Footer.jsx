@@ -19,10 +19,22 @@ export default function Footer() {
           </div>
           <div className="footer__contact__col">
             <div className="footer__contact__col__heading">Quick Link</div>
-            <NavLink to="/" className="footer__contact__col__link">
+            <NavLink
+              to="/"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="footer__contact__col__link"
+            >
               Home
             </NavLink>
-            <NavLink to="/about" className="footer__contact__col__link">
+            <NavLink
+              to="/about"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="footer__contact__col__link"
+            >
               About
             </NavLink>
             <NavLink to="/" className="footer__contact__col__link">
@@ -64,7 +76,15 @@ export default function Footer() {
             <div className="footer__contact__col__link__info">
               www.fundamentaltextiles.com
             </div>
-            <div className="footer__contact__col__button">Contact Us</div>
+            <NavLink
+              to="/contact"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="footer__contact__col__button"
+            >
+              Contact Us
+            </NavLink>
           </div>
         </div>
       </div>
