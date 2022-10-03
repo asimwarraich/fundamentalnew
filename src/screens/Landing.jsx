@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import aboutcloth from "../img/aboutcloth.png";
 import prologo from "../img/prologo.png";
@@ -9,8 +9,8 @@ import Footer from "../components/Footer";
 import HomeProductsCard from "../components/HomeProductsCard";
 import videoone from "../img/videoone.mp4";
 import { LandingServicesSection } from "./LandingServicesSection";
+
 export default function Landing() {
-  const [videoPaused, setVideoPaused] = useState(true);
   return (
     <>
       <Header />
@@ -22,7 +22,6 @@ export default function Landing() {
               className="main__video__btn"
               onClick={() => {
                 const video = document.getElementById("video");
-                setVideoPaused(false);
                 if (video.paused) video.play();
                 else video.pause();
               }}
