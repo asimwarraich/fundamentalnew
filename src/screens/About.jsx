@@ -24,6 +24,8 @@ export default function About() {
                 const video = document.getElementById("video");
                 if (video.paused) video.play();
                 else video.pause();
+                document.querySelector(".main__video__btn").style.display =
+                  "none";
               }}
             >
               <svg
@@ -48,7 +50,7 @@ export default function About() {
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="1900"
+            data-aos-duration="1200"
             data-aos-easing="ease-in-out"
             className="about__section__container__img"
           >
@@ -58,7 +60,7 @@ export default function About() {
             data-aos="fade-left"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="2000"
+            data-aos-duration="1300"
             data-aos-easing="ease-in-out"
             className="about__section__container__right__contant"
           >
@@ -94,7 +96,7 @@ export default function About() {
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >
@@ -136,7 +138,7 @@ export default function About() {
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"
-              data-aos-duration="1500"
+              data-aos-duration="800"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >

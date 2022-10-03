@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="contact__cards__container">
         <ContactCards
           svg={
-            <svg width="52" height="58" viewBox="0 0 52 58" fill="none">
+            <svg width="52" height="58" viewBox="0 0 52 58" fill="white">
               <path
                 d="M2 20.727L26.078 2L50.156 20.727V50.156C50.156 51.5752 49.5922 52.9362 48.5887 53.9397C47.5852 54.9432 46.2242 55.507 44.805 55.507H7.351C5.93183 55.507 4.57078 54.9432 3.56727 53.9397C2.56376 52.9362 2 51.5752 2 50.156V20.727Z"
                 stroke="currentColor"
@@ -23,7 +23,7 @@ export default function Contact() {
               />
               <path
                 d="M18.0518 55.508V28.754H34.1038V55.508"
-                stroke="#071B36"
+                stroke="currentColor"
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -63,7 +63,7 @@ export default function Contact() {
               />
               <path
                 d="M54.9638 7.62411L28.2768 26.3051L1.58984 7.62411"
-                stroke="#071B36"
+                stroke="currentColor"
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"

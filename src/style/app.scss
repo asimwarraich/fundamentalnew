@@ -29,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ae907d;
+  background-color: #dedbd9;
   padding: 2em;
 }
 .dropdown__svg svg {
@@ -74,7 +74,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4em 3em;
+  padding: 0em 3em;
   position: fixed;
   background-color: $primary;
   z-index: 999;
@@ -94,7 +94,7 @@ body {
 .nav__contant__links {
   font-weight: 500;
   text-decoration: none;
-  padding: 1.4em 1em;
+  padding: 1.5em 1em;
   border-bottom-right-radius: 20px;
   color: black;
   margin: 0px 12px;
@@ -320,6 +320,7 @@ body {
 .products__contant__wraper__card__svg svg {
   margin-top: 1em;
   height: 70px;
+  color: $secondary;
 }
 .products__contant__wraper__card__svg svg:hover {
   color: white;
@@ -350,7 +351,6 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
-  padding: 2em;
 }
 .landing__services__section img {
   width: 100%;
@@ -739,7 +739,7 @@ body {
 .contact__card {
   width: 25%;
   max-height: 250px;
-  border: 1px solid $secondary;
+  border: 1px solid $color;
   background-color: white;
   z-index: 1;
   padding: 2em;
@@ -758,6 +758,7 @@ body {
 .contact__card:hover {
   background-color: $secondary;
   color: white;
+  border-color: $secondary;
 }
 .contact__card:hover * {
   color: white;
@@ -937,7 +938,7 @@ body {
   padding: 1em 2em;
 }
 .mid__line__about__vision {
-  height: 230px;
+  height: 270px;
   width: 2px;
   border-radius: 12px;
   background-color: $color;
@@ -951,8 +952,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1em;
-  height: 130px;
-  width: 130px;
+  height: 160px;
+  width: 160px;
   background-color: #464646;
   border-radius: 100px;
   transition: 300ms ease-in-out;
@@ -962,7 +963,8 @@ body {
   transition: 300ms ease-in-out;
 }
 .vision__container__vision__svg svg {
-  height: 400px;
+  height: 450px;
+  width: 100px;
   padding: 1em;
   z-index: 1;
 }
@@ -971,9 +973,9 @@ body {
   content: "";
   background-color: $secondary;
   opacity: 0.4;
-  height: 150px;
-  width: 150px;
-  border-radius: 80px;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
   display: none;
   transition: 300ms ease-in-out;
 }
@@ -1089,7 +1091,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em 0em;
+  margin: 2em 0em;
 }
 .Vendor__card__wraper__info {
   font-weight: 600;
@@ -1108,6 +1110,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .Vendor__card__wraper__img img {
   height: 190px;
@@ -1582,6 +1586,9 @@ body {
   }
   .products__contant__wraper__heading {
     font-size: 24px;
+  }
+  .landing__services__section {
+    padding: 1em;
   }
   .landing__services__section__heading {
     font-size: 24px;

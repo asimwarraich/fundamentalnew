@@ -30,6 +30,9 @@ export default function Header() {
       } else {
         setIsScrolling(false);
       }
+      window.addEventListener("scroll", () => {
+        setIsDropDownOpen(false);
+      });
     });
   }, []);
   return (
