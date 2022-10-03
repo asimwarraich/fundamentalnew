@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import vendor from "../img/vendor.png";
 import VendorCard from "./VendorCard";
+
 export default function VendorSwiper() {
   const [slidesPerView, setSlidesPerView] = useState(4);
   function changeSlidesPerView() {
@@ -21,39 +22,37 @@ export default function VendorSwiper() {
   }, []);
 
   return (
-    <>
-      <Swiper
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1500"
-        data-aos-easing="ease-in-out"
-        className="vendor__card__wraper__container"
-        spaceBetween={10}
-        slidesPerView={slidesPerView}
-      >
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <VendorCard img={vendor} info="Vendor Name 1" />
-        </SwiperSlide>
-      </Swiper>
-    </>
+    <Swiper
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+      className="vendor__card__wraper__container"
+      spaceBetween={10}
+      slidesPerView={slidesPerView}
+    >
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <VendorCard img={vendor} info="Vendor Name 1" />
+      </SwiperSlide>
+    </Swiper>
   );
 }
