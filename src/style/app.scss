@@ -1607,6 +1607,12 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .about__overlay__contant__wraper {
+    padding: 1em;
+  }
+  .landing__about__section {
+    padding: 0em;
+  }
   .quotation__about__wraper {
     padding: 0em 2em;
   }
