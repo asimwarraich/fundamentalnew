@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 import aboutimg from "../img/aboutimg.png";
 import ContactCards from "../components/ContactCards";
 import HeaderBanner from "../components/HeaderBanner";
+
 export default function Contact() {
   return (
     <>
@@ -83,6 +83,7 @@ export default function Contact() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.5354780265543!2d-2.239148049107507!3d53.49462927991221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1b5d02e1ff9%3A0x119915f5f711a76!2s19%20Stanley%20St%2C%20Cheetham%20Hill%2C%20Manchester%20M8%208SH%2C%20UK!5e0!3m2!1sen!2s!4v1664275550280!5m2!1sen!2s"
             width="100%"
             height="100%"
+            title="map"
             style={{ border: 0 }}
             allowfullscreen=""
             loading="lazy"

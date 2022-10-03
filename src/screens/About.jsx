@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import aboutmain from "../img/aboutmain.png";
 import Footer from "../components/Footer";
@@ -11,7 +11,6 @@ import pak from "../img/pak.png";
 import uk from "../img/uk.png";
 import { LandingServicesSection } from "./LandingServicesSection";
 export default function About() {
-  const [videoPaused, setVideoPaused] = useState(true);
   return (
     <>
       <Header />
@@ -23,7 +22,6 @@ export default function About() {
               className="main__video__btn"
               onClick={() => {
                 const video = document.getElementById("video");
-                setVideoPaused(false);
                 if (video.paused) video.play();
                 else video.pause();
               }}
