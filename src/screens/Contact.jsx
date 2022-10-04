@@ -32,7 +32,7 @@ export default function Contact() {
             />
           </svg>
         }
-        title="Contanct US"
+        title="Contact Us"
       />
       <div className="contact__cards__container">
         <ContactCards
