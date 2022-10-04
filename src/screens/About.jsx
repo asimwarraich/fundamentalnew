@@ -50,7 +50,7 @@ export default function About() {
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="1200"
+            data-aos-duration="800"
             data-aos-easing="ease-in-out"
             className="about__section__container__img"
           >
@@ -60,7 +60,7 @@ export default function About() {
             data-aos="fade-left"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-duration="1300"
+            data-aos-duration="800"
             data-aos-easing="ease-in-out"
             className="about__section__container__right__contant"
           >
