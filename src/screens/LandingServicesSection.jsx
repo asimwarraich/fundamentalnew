@@ -56,7 +56,7 @@ export function LandingServicesSection() {
                 img={servicecardone}
                 title="Product Research
               & Development "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+                text="We at Fundamental Textiles are equipped with the fabric technologists and state-of-art machinery to innovate, invent, initiate & replicate any specific requirement  in textiles, apparels and treatments."
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -71,15 +71,7 @@ export function LandingServicesSection() {
                 img={servicecardthre}
                 title="Your 
               One-Stop Shop   "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ServicesCard
-                img={servicecardfour}
-                title="Production 
-              Follow-up"
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+                text="Fundamental Textile ensures ready-to-wear clothing and uniforms for industrial clothing, healthcare, uniforms and casual fast-fashion products. You just have to book an order and rest will be taken care by our teams."
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -87,7 +79,7 @@ export function LandingServicesSection() {
                 img={servicecardone}
                 title="Product Research
               & Development "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+                text="We at Fundamental Textiles are equipped with the fabric technologists and state-of-art machinery to innovate, invent, initiate & replicate any specific requirement  in textiles, apparels and treatments."
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -102,15 +94,7 @@ export function LandingServicesSection() {
                 img={servicecardthre}
                 title="Your 
               One-Stop Shop   "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ServicesCard
-                img={servicecardfour}
-                title="Production 
-              Follow-up"
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+                text="Fundamental Textile ensures ready-to-wear clothing and uniforms for industrial clothing, healthcare, uniforms and casual fast-fashion products. You just have to book an order and rest will be taken care by our teams."
               />
             </SwiperSlide>
           </Swiper>

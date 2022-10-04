@@ -221,6 +221,12 @@ export default function Landing() {
                 them maximize their productivity.
               </div>
             </div>
+            We at Fundamental Textiles have teamed up with our major customers
+            to source sustainable clothing to play our part towards conserving
+            the natural resources and reduction of negative foot print to turn
+            this into the circular economy. At FTL, we have implemented the
+            carefully crafted strategies to reduce the usage of non-renewable
+            resources as much as possible.
           </div>
 
           <div
