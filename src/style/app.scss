@@ -92,6 +92,7 @@ body {
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
+  transition: 0.1s ease-in-out;
 }
 .nav__contant__links {
   font-weight: 500;
@@ -902,6 +903,7 @@ body {
   height: 320px;
   border: 1px solid $primary;
   border-radius: 400px;
+  opacity: 0.4;
 }
 .about__vision__container {
   width: 100%;
@@ -1295,7 +1297,7 @@ body {
 }
 @media (max-width: 1200px) {
   .police__overlay img {
-    height: 315px;
+    height: 385px;
     margin: 0em;
   }
   .about__police__contant__text {
@@ -1412,16 +1414,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #a27355;
+    background-color: #afafaf;
     color: $secondary;
     right: 0%;
     width: 262px;
     height: 130vh;
-    top: -170%;
+    top: -370%;
     opacity: 0.4;
     animation: nav__bar__contant__animation 300ms both;
     transform-origin: right;
-    transition: 300ms ease-in-out;
+    transition: 0.1s ease-in-out;
   }
   .nav__contant__links {
     display: flex;
@@ -1488,7 +1490,7 @@ body {
     padding: 12px;
   }
   .vision__container__vision__svg svg {
-    height: 70px;
+    height: 100px;
     margin: 12px 0px;
   }
   .vision__container__vision__title {
@@ -1710,7 +1712,7 @@ body {
     padding: 1.5em 0em;
   }
   .about__main__header__video video {
-    height: 320px;
+    height: 220px;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
