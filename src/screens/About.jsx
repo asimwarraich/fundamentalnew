@@ -10,6 +10,7 @@ import VendorSwiper from "../components/VendorSwiper";
 import pak from "../img/pak.png";
 import uk from "../img/uk.png";
 import { LandingServicesSection } from "./LandingServicesSection";
+
 export default function About() {
   return (
     <>
