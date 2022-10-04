@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import aboutimg from "../img/aboutimg.png";
 import ServicesCard from "../components/ServicesCard";
 import servicecardone from "../img/servicecardone.png";
 import servicecardtwo from "../img/servicecardtwo.png";
 import servicecardthre from "../img/servicecardthre.png";
-import servicecardfour from "../img/servicecardfour.png";
 
 export function LandingServicesSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);

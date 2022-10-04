@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import workerimg from "../img/workerimg.png";
 import HeaderBanner from "../components/HeaderBanner";
+
 export default function Worker() {
   return (
     <>

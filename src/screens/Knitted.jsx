@@ -5,6 +5,7 @@ import KnittedCard from "../components/KnittedCard";
 import HeaderBanner from "../components/HeaderBanner";
 import KnittedImgCardSwiper from "../components/KnittedImgCardSwiper";
 import KnittedProductIntry from "../components/KnittedProductIntry";
+
 export default function Knitted() {
   return (
     <>

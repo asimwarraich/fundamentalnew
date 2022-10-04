@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 $primary: #efefef;
 $secondary: #b04600;
 $color: #1e1e1e;
@@ -10,7 +10,6 @@ $color: #1e1e1e;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Jost", sans-serif;
-  color: #161515;
 }
 body {
   margin: 0;
@@ -189,7 +188,6 @@ body {
   width: 50%;
 }
 .about__overlay__laft__contant__heading__upper {
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: $secondary;
@@ -206,7 +204,6 @@ body {
   background-color: $secondary;
 }
 .about__overlay__laft__contant__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 700;
   width: 55%;
@@ -280,7 +277,6 @@ body {
   margin: 0 auto;
 }
 .products__contant__wraper__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 700;
   color: $primary;
@@ -331,7 +327,6 @@ body {
   color: white;
 }
 .products__contant__wraper__card__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin: 14px 0px;
@@ -364,7 +359,6 @@ body {
   justify-content: flex-end;
 }
 .landing__services__section__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 700;
   margin: 2em 0em;
@@ -406,7 +400,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .services__card__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   color: $primary;
   line-height: 22px;
@@ -456,7 +449,6 @@ body {
   flex-direction: column;
 }
 .sustain__section__contant__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   color: $secondary;
   font-weight: 600;
@@ -532,7 +524,6 @@ body {
   padding: 1em 2em;
 }
 .qua__right__contant__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 700;
   width: 80%;
@@ -592,7 +583,6 @@ body {
   margin: 3em;
 }
 .police__right__contant__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 700;
   margin: 12px 0px;
@@ -690,7 +680,6 @@ body {
   padding: 0em 2em;
 }
 .about__section__container__right__contant__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 800;
   padding: 0.6em 0em;
@@ -988,7 +977,6 @@ body {
   transition: 300ms ease-in-out;
 }
 .vision__container__vision__title {
-  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 0.4em;
@@ -1006,7 +994,6 @@ body {
 }
 
 .about__team__heading {
-  font-family: "Montserrat", sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1034,7 +1021,6 @@ body {
   opacity: 0.4;
 }
 .about__team__section__wraper__card__title {
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 600;
   margin: 22px 0px;
@@ -1066,7 +1052,6 @@ body {
   flex-direction: column;
 }
 .Strategic__container__contant__text__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   width: 50%;
@@ -1089,7 +1074,6 @@ body {
   padding: 7em 0em;
 }
 .Vendor__container__heading {
-  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 800;
   display: flex;
