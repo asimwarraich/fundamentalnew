@@ -48,7 +48,7 @@ export default function Knitted() {
               </svg>
             }
             title="Blends "
-            info="100% Cotton, Poly-Cotton 65/35, 50/50, CVC 60/40, 55/45, Tri-blends. "
+            info="100% Cotton, Poly-Cotton 65/35, PC 50/50, CVC 65:35 and mixture of blends as per the requirements. "
           />
           <KnittedCard
             svg={

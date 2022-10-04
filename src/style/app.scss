@@ -561,11 +561,11 @@ body {
 
 .about__police__contant__text {
   position: absolute;
-  top: 5%;
+  top: 22%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3em 5em;
+  padding: 3.5em 6em;
 }
 .about__police__contant__text * {
   color: white;
@@ -585,11 +585,10 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  margin-top: -6em;
 }
 .police__overlay img {
   width: 100%;
-  height: 370px;
+  height: 440px;
   margin: 3em;
 }
 .police__right__contant__heading {
@@ -925,7 +924,7 @@ body {
 .vision__and__mission {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -940,10 +939,10 @@ body {
   flex-direction: column;
   width: 30%;
   min-width: 200px;
-  padding: 1em 2em;
+  padding: 1em;
 }
 .mid__line__about__vision {
-  height: 270px;
+  height: 410px;
   width: 2px;
   border-radius: 12px;
   background-color: $color;

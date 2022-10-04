@@ -70,21 +70,18 @@ export default function About() {
             <div className="about__section__container__right__contant__sub__heading">
               Fundamental Textiles Ltd was established in 2010 as an import and
               distribution company for knitted and woven garments. Since its
-              inception FTL has emphasised on supply of quality products at
-              competitive prices with innovative product ideas. This has led to
-              the sustainable growth of the company. With our head office based
-              in Manchester, we offer customers a complete one-stop solution for
-              knitted and woven garments for retail and work wear. <br /> Our
-              range of services covers vertical supply chain management
-              solutions right from the designing of new products through to
-              product development, production follow up, in line and pre
-              shipment inspections and shipping follow ups. We cover all the
-              important aspects including the price, ethical production
-              practices, quality control, and timely delivery. We have joined
-              hands with some leading manufacturing companies based in Pakistan.
-              This strategic partnership has enabled us to work in close liaison
-              with our partner factories and successfully delivering required
-              supply chain solutions to our customers.
+              inception and growth over the last decade FTL has enhanced its
+              global foot prints locally as well as internationally. We
+              continued to supply quality products at competitive prices with
+              innovative product ideas. This has led to the sustainable growth
+              of the company. <br /> With our head office based in Manchester,
+              we offer customers a complete one-stop solution for knitted and
+              woven garments for retail and work wear. We have joined hands with
+              some leading manufacturing companies based in Pakistan. This
+              strategic partnership has enabled us to work in close liaison with
+              our partner factories and successfully delivering required supply
+              chain solutions to our customers. With the credibility,
+              transparency and reliability – we are committed to deliver.
             </div>
           </div>
         </div>
@@ -127,9 +124,8 @@ export default function About() {
             </div>
             <div className="vision__container__vision__title">Mission</div>
             <div className="vision__container__vision__info">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              voluptates autem officia esse.t consectetur, adipisicing elit.
-              Commodi voluptates autem officia esse.
+              We are committed to offer quality products to our customers backed
+              by reliable after sales service and smooth delivery of goods.
             </div>
           </div>
           <div className="mid__line__about__vision"></div>
@@ -169,9 +165,14 @@ export default function About() {
             </div>
             <div className="vision__container__vision__title">Vision</div>
             <div className="vision__container__vision__info">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              voluptates autem officia esse. t consectetur, adipisicing elit.
-              Commodi voluptates autem officia esse.
+              FTL's vision is to become a unique textile-based production and
+              distribution facility that not only follows eco-friendly practices
+              to manufacture and distribute its products itself; but also
+              encourages its partner manufacturers to follow suit as well. We
+              are striving to be a leading sustainable sourcing company for
+              clothing in order to play an active role in conservation of
+              natural resources and reduce carbon foot print for a circular
+              economy and to preserve our mother earth. .
             </div>
           </div>
         </div>
@@ -186,9 +187,10 @@ export default function About() {
               Quality Policy
             </div>
             <div className="police__right__contant__sub__heading">
-              “Work on good prose has three steps: a musical stage when it is
-              composed, an architectonic one when it is built, and a textile one
-              when it is woven.”
+              We aim to create a mutually beneficial business model by creating
+              beneficial value and opportunity for our customers, suppliers and
+              employees based on long term basis. Commitment, reliability and
+              transparency to be basic pillars of this business model.
             </div>
           </div>
         </div>

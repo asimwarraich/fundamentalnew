@@ -49,7 +49,7 @@ export default function Woven() {
               </svg>
             }
             title="Blends "
-            info="100% Cotton, Poly-Cotton 65/35, 50/50, CVC 60/40, 55/45, Tri-blends. "
+            info="100% Cotton, Poly-Cotton Blends, Cotton Rich Blends with mixed blending of polyester, BCI Cotton and hemp, Tencel & Lined Blends, Cotton and Nylon blends. "
           />
           <KnittedCard
             svg={
@@ -80,7 +80,7 @@ export default function Woven() {
               </svg>
             }
             title="Special Finishes "
-            info="Peach finish, Water repellent, Stain resistant, Silicon wash,Anti-pilling, and Enzyme wash. "
+            info="Peaching & Microsand, Stain Resistant and Stain Repellency, Anti Pilling, Pre cure Wrinkle – free and post cure to keep fabric iron free, wicking, raising and last but not the least water and oily Repellency for the outer/work wear needs. "
           />
         </div>
       </div>
