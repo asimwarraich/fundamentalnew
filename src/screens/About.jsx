@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import aboutmain from "../img/aboutmain.png";
 import Footer from "../components/Footer";
-import videoone from "../img/videoone.mp4";
 import abouttwo from "../img/abouttwo.png";
 import quapolice from "../img/quapolice.png";
 import Strategic from "../img/Strategic.png";
@@ -10,41 +9,13 @@ import VendorSwiper from "../components/VendorSwiper";
 import pak from "../img/pak.png";
 import uk from "../img/uk.png";
 import { LandingServicesSection } from "./LandingServicesSection";
+import { Jumbotron } from "./Jumbotron";
 
 export default function About() {
   return (
     <>
       <Header />
-      <div className="about__header__container">
-        <div className="about__main__header__video">
-          <video src={videoone} type="video/mp4" id="video" />
-          <div className="main__video__btn__container">
-            <button
-              className="main__video__btn"
-              onClick={() => {
-                const video = document.getElementById("video");
-                if (video.paused) video.play();
-                else video.pause();
-                document.querySelector(".main__video__btn").style.display =
-                  "none";
-              }}
-            >
-              <svg
-                width="36"
-                height="41"
-                viewBox="0 0 36 41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M34.5 17.9019C36.5 19.0566 36.5 21.9434 34.5 23.0981L5.25001 39.9856C3.25001 41.1403 0.750002 39.6969 0.750002 37.3875L0.750003 3.61251C0.750004 1.30311 3.25 -0.140273 5.25 1.01443L34.5 17.9019Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      <Jumbotron />
       <div className="about__section__container">
         <div className="about__section__wraper">
           <div
@@ -277,7 +248,6 @@ export default function About() {
         </div>
         <VendorSwiper />
       </div>
-
       <Footer />
     </>
   );
