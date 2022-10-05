@@ -15,6 +15,7 @@ export function Jumbotron() {
         <div className="main__video__btn__container">
           <button
             className="main__video__btn"
+            title="play/pause"
             onClick={() => {
               setIsVideo(true);
               const video = document.getElementById("video");
