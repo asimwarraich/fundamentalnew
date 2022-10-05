@@ -28,8 +28,6 @@ export function LandingServicesSection() {
       <div className="landing__services__container">
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
           data-aos-duration="900"
           data-aos-easing="ease-in-out"
           className="landing__services__section__heading"
@@ -38,9 +36,6 @@ export function LandingServicesSection() {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1500"
           data-aos-easing="ease-in-out"
           style={{ padding: "0em 2em", width: "100%" }}
         >

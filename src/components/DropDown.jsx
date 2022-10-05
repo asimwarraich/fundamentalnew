@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ClickAwayListener from "react-click-away-listener";
 
-export default function Dropdown() {
+export default function Dropdown({ setIsDropDownOpen }) {
   return (
     <ClickAwayListener
       onClickAway={() => {

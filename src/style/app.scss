@@ -21,34 +21,33 @@ body {
 .dropdown__list__nav {
   position: absolute;
   top: 4.5em;
-  left: -3em;
-  width: 550px;
-  height: 200px;
+  right: 6em;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e7e7e7;
-  padding: 2em;
+  flex-direction: column;
+  background-color: #efefef;
+  padding: 1em 0.5em;
 }
 .dropdown__svg svg {
-  height: 50px;
+  height: 30px;
+  width: 30px;
+  margin-right: 1em;
 }
 .dropdown__link {
   display: flex;
-  flex-direction: column;
   align-items: center;
   font-weight: 600;
   text-decoration: none;
   color: black;
   margin: 0px 12px;
   font-size: 18px;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 .dropdown__link:hover {
   color: $secondary;
   background-color: rgb(226, 224, 224);
-  border-radius: 12px;
 }
 .nav__bar__btn__menu {
   display: none;
@@ -418,14 +417,16 @@ body {
 .services__card__heading {
   font-size: 24px;
   color: $primary;
-  line-height: 22px;
+  line-height: 90%;
   font-weight: 600;
-  transform: translateY(110px);
+  transform: translateY(90px);
+  width: 100%;
+  max-width: 200px;
 }
 .services__card__sub__heading {
   color: $primary;
   line-height: 20px;
-  transform: translateY(110px);
+  transform: translateY(90px);
   opacity: 0;
 }
 .services__card__contant:hover .services__card__heading {
@@ -1416,12 +1417,14 @@ body {
     justify-content: center;
     flex-direction: column;
     height: fit-content;
+    background-color: #e7e7e7;
     padding: 0.5em 2em;
   }
   .dropdown__svg svg {
     display: none;
   }
   .dropdown__link {
+    flex-direction: column;
     padding: 0.5em 0em;
     font-size: 16px;
     font-weight: 400;
