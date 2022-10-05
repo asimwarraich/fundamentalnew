@@ -1,9 +1,11 @@
 import React, { useLayoutEffect } from "react";
-import OutsideClickHandler from "react-outside-click-handler";
-import { NavLink, Link } from "react-router-dom";
+import ClickAwayListener from "react-click-away-listener";
+import { Link, useLocation } from "react-router-dom";
 import DropDown from "./DropDown";
 import logo from "../img/logo.png";
+
 export default function Header() {
+  const location = useLocation();
   const dropDownlistItem = [
     { name: "produst", link: "/knitted" },
     { name: "worker", link: "/worker" },
@@ -19,20 +21,13 @@ export default function Header() {
       setIsOpen(true);
     }
   }
-
   useLayoutEffect(() => {
     checkNavOpenClose();
     window.addEventListener("resize", checkNavOpenClose);
     window.addEventListener("scroll", () => {
       checkNavOpenClose();
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
-      window.addEventListener("scroll", () => {
-        setIsDropDownOpen(false);
-      });
+      setIsDropDownOpen(false);
+      window.scrollY > 0 ? setIsScrolling(true) : setIsScrolling(false);
     });
   }, []);
   return (
@@ -48,29 +43,31 @@ export default function Header() {
           <img src={logo} alt="logo" />
         </Link>
         {isOpen ? (
-          <OutsideClickHandler
-            onOutsideClick={() => {
+          <ClickAwayListener
+            onClickAway={() => {
               if (window.innerWidth < 900) {
                 setIsOpen(false);
               }
             }}
           >
             <div className="nav__bar__contant">
-              <NavLink
+              <Link
                 to="/"
-                end
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
                   }
                 }}
-                className="nav__contant__links"
+                className={
+                  !isDropDownOpen && location.pathname === "/"
+                    ? "nav__contant__links active"
+                    : "nav__contant__links"
+                }
               >
                 Home
-              </NavLink>
-
-              <NavLink
+              </Link>
+              <Link
                 to="/about"
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -78,32 +75,35 @@ export default function Header() {
                     setIsOpen(false);
                   }
                 }}
-                className="nav__contant__links"
+                className={
+                  !isDropDownOpen && location.pathname === "/about"
+                    ? "nav__contant__links active"
+                    : "nav__contant__links"
+                }
               >
                 About
-              </NavLink>
-              <div
+              </Link>
+              <button
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                   setIsDropDownOpen(!isDropDownOpen);
                 }}
-                className="nav__contant__links"
+                className={
+                  isDropDownOpen
+                    ? "nav__contant__links active"
+                    : "nav__contant__links"
+                }
               >
-                {isDropDownOpen ? (
-                  <OutsideClickHandler
-                    onOutsideClick={() => {
-                      setIsDropDownOpen(false);
-                    }}
-                  >
-                    <DropDown
-                      dropdownlist={dropDownlistItem}
-                      isOpen={isDropDownOpen}
-                    />
-                  </OutsideClickHandler>
-                ) : null}
                 Products
-              </div>
-              <NavLink
+                {isDropDownOpen ? (
+                  <DropDown
+                    dropdownlist={dropDownlistItem}
+                    isOpen={isDropDownOpen}
+                    setIsDropDownOpen={setIsDropDownOpen}
+                  />
+                ) : null}
+              </button>
+              <Link
                 to="/Contact"
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -111,12 +111,16 @@ export default function Header() {
                     setIsOpen(false);
                   }
                 }}
-                className="nav__contant__links"
+                className={
+                  !isDropDownOpen && location.pathname === "/Contact"
+                    ? "nav__contant__links active"
+                    : "nav__contant__links"
+                }
               >
                 Contact Us
-              </NavLink>
+              </Link>
             </div>
-          </OutsideClickHandler>
+          </ClickAwayListener>
         ) : null}
         <div className="nav__bar__btn__menu">
           <button
@@ -126,9 +130,9 @@ export default function Header() {
             }}
           >
             {isOpen ? (
-              <Close size="24" color="white" />
+              <Close size="18" color="white" />
             ) : (
-              <Menu size="24" color="white" />
+              <Menu size="18" color="white" />
             )}
           </button>
         </div>
