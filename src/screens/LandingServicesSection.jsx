@@ -8,7 +8,7 @@ import servicecardthre from "../img/servicecardthre.png";
 export function LandingServicesSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
   function changeSlidesPerView() {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 700) {
       setSlidesPerView(1);
     } else if (window.innerWidth < 900) {
       setSlidesPerView(2);

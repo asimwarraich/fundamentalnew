@@ -21,8 +21,8 @@ body {
 .dropdown__list__nav {
   position: absolute;
   top: 4.5em;
-  left: -2em;
-  width: 500px;
+  left: -3em;
+  width: 550px;
   height: 200px;
   border-radius: 5px;
   display: flex;
@@ -392,7 +392,6 @@ body {
 }
 .services__card__wraper img {
   max-height: 420px;
-  max-width: 312px;
   border-radius: 8px;
 }
 .services__card__contant {
@@ -808,8 +807,6 @@ body {
   background: url("../img/footerbg.png");
   border-top-right-radius: 200px;
   background-size: cover;
-  // max-width: 1440px;
-  // margin: 0 auto;
 }
 
 .footer__contant__container {
@@ -1206,8 +1203,6 @@ body {
   background: url(../img/knittedheader.png);
   background-size: cover;
   padding: 4em 0em;
-  // max-width: 1440px;
-  // margin: 0 auto;
 }
 .worker__wraper {
   display: flex;
@@ -1289,7 +1284,7 @@ body {
   transition: 300ms ease-in-out;
 }
 .knitted__product__container__filter__card__svg {
-  color: #464646;
+  color: #a8a8a8;
 }
 .knitted__product__container__filter__card__info {
   font-size: 18px;
@@ -1364,6 +1359,15 @@ body {
   }
 }
 @media (max-width: 1000px) {
+  .services__card__sub__heading {
+    transform: translateY(150px);
+  }
+  .services__card__heading {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 300ms ease-in-out;
+    transform: translateY(150px);
+  }
   .about__section__wraper {
     flex-direction: column;
   }
@@ -1482,6 +1486,13 @@ body {
   }
 }
 @media (max-width: 950px) {
+  .services__card__sub__heading {
+    transform: translateY(105px);
+  }
+  .services__card__heading {
+    transition: 300ms ease-in-out;
+    transform: translateY(105px);
+  }
   .worker__wraper {
     flex-direction: column-reverse;
   }
@@ -1657,6 +1668,13 @@ body {
   }
 }
 @media (max-width: 450px) {
+  // .services__card__sub__heading {
+  //   transform: translateY(10px);
+  // }
+  // .services__card__heading {
+  //   transition: 300ms ease-in-out;
+  //   transform: translateY(10px);
+  // }
   .about__overlay__contant__wraper {
     padding: 1em;
   }
@@ -1707,6 +1725,13 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .services__card__sub__heading {
+    transform: translateY(70px);
+  }
+  .services__card__heading {
+    transition: 300ms ease-in-out;
+    transform: translateY(70px);
+  }
   .products__contant__wraper {
     margin-top: 2em;
   }
