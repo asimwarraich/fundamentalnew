@@ -52,8 +52,6 @@ export default function Landing() {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
           data-aos-duration="1100"
           className="products__overlay__contant__wraper"
         >
@@ -126,8 +124,6 @@ export default function Landing() {
       <div className="quotation__about__wraper">
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
           data-aos-duration="1000"
           className="qua__img__left"
         >
@@ -135,8 +131,6 @@ export default function Landing() {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
           data-aos-duration="1000"
           className="qua__right__contant"
         >
@@ -159,8 +153,6 @@ export default function Landing() {
         <div className="sustain__overlay__contant__wraper">
           <div
             data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="sus__contant__wraper"
@@ -208,8 +200,6 @@ export default function Landing() {
 
           <div
             data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="sustain__section__img"

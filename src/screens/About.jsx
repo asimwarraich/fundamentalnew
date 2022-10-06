@@ -20,8 +20,6 @@ export default function About() {
         <div className="about__section__wraper">
           <div
             data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="50"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             className="about__section__container__img"
@@ -30,8 +28,6 @@ export default function About() {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             className="about__section__container__right__contant"
@@ -63,8 +59,6 @@ export default function About() {
           <div className="vision__container__left">
             <div
               data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
@@ -104,8 +98,6 @@ export default function About() {
           <div className="vision__container__left">
             <div
               data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
@@ -174,8 +166,6 @@ export default function About() {
       <LandingServicesSection />
       <div
         data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         className="about__team__section"
@@ -213,8 +203,6 @@ export default function About() {
 
       <div
         data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
         data-aos-duration="1000"
         className="Strategic__container"
       >
@@ -238,8 +226,6 @@ export default function About() {
       <div className="Vendor__container">
         <div
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
           data-aos-duration="900"
           data-aos-easing="ease-in-out"
           className="Vendor__container__heading"

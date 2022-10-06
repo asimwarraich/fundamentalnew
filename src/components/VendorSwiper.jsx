@@ -24,9 +24,6 @@ export default function VendorSwiper() {
   return (
     <Swiper
       data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1500"
       data-aos-easing="ease-in-out"
       className="vendor__card__wraper__container"
       spaceBetween={10}
