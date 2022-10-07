@@ -124,7 +124,7 @@ body {
   padding-bottom: 0.7em;
   border-bottom-right-radius: 20px;
   color: black;
-  margin: 0px 12px;
+  margin: 0px 6px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -1049,8 +1049,8 @@ body {
   border: 1px solid black;
   transition: 300ms ease-in-out;
   padding: 1em;
-  height: 180px;
-  width: 180px;
+  height: 190px;
+  width: 190px;
   position: absolute;
   border-radius: 100px;
   margin: 2em 0em;
@@ -1087,8 +1087,8 @@ body {
   content: "";
   background-color: $secondary;
   opacity: 0.4;
-  height: 180px;
-  width: 180px;
+  height: 190px;
+  width: 190px;
   border-radius: 90px;
   display: none;
   transition: 300ms ease-in-out;
@@ -1744,6 +1744,7 @@ body {
 
   .video__pause__wraper {
     height: 300px;
+
   }
 }
 @media (max-width: 550px) {
