@@ -103,7 +103,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   padding: 1.5em 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.7em;
   border-bottom-right-radius: 20px;
   color: black;
   margin: 0px 12px;
@@ -712,12 +712,12 @@ body {
 
 .contact__banner__img img {
   width: 100%;
-  height: 400px;
+  height: 550px;
   object-fit: cover;
 }
 .contact__overlay {
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -758,7 +758,7 @@ body {
   border-radius: 14px;
 }
 .contact__card__svg svg {
-  height: 70px;
+  height: 60px;
   margin-top: 2em;
 }
 .contact__card__heading {
@@ -1718,7 +1718,7 @@ body {
     font-size: 24px;
   }
   .contact__banner__img img {
-    height: 300px;
+    height: 350px;
   }
 
   .about__overlay__laft__contant__heading {
