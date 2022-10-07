@@ -13,9 +13,9 @@ export default function KnittedImgCardSwiper() {
     } else if (window.innerWidth < 800) {
       setSlidesPerView(2);
     } else if (window.innerWidth < 1000) {
-      setSlidesPerView(4);
+      setSlidesPerView(3);
     } else if (window.innerWidth < 1200) {
-      setSlidesPerView(6);
+      setSlidesPerView(5);
     } else setSlidesPerView(7);
   }
 
