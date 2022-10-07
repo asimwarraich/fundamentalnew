@@ -126,6 +126,12 @@ body {
   width: 100%;
   padding-top: 2.4em;
 }
+.landingsecond__main__banner{
+  width: 100%;
+
+  padding-top: 11em;
+}
+
 .video__pause__wraper {
   position: relative;
   width: 100%;
@@ -133,7 +139,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 700px;
+  max-height: 600px;
+  overflow: hidden;
+}
+.videosecond__pause__wraper__pic img {
+  height: 10px;
+}
+.videosecond__pause__wraper{
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+border-bottom-right-radius: 60px;
+border-top-left-radius:60px ;
+
+  max-height: 350px;
   overflow: hidden;
 }
 .video__pause__wraper video {
@@ -1651,6 +1674,13 @@ transition: 300ms ease-in-out;
   }
 }
 @media (max-width: 550px) {
+  .landingsecond__main__banner{
+    padding-top: 7em;
+    padding-bottom: 2em;
+      }
+      .videosecond__pause__wraper{
+        width: 90%;
+      }
   .knitted__product__container__filter__card__svg svg {
     height: 60px;
   }

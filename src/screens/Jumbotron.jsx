@@ -1,5 +1,5 @@
 import React from "react";
-import videoone from "../img/videoone.mp4";
+import videosecond from "../img/videosecond.mp4";
 import banner from "../img/banner.png";
 
 export function Jumbotron() {
@@ -8,7 +8,7 @@ export function Jumbotron() {
     <div className="landing__main__banner">
       <div className="video__pause__wraper">
         {isVideo ? (
-          <video src={videoone} type="video/mp4" id="video" />
+          <video src={videosecond} type="video/mp4" id="video" />
         ) : (
           <img src={banner} alt="banner" />
         )}
@@ -18,11 +18,11 @@ export function Jumbotron() {
             title="play/pause"
             onClick={() => {
               setIsVideo(true);
+              document.querySelector(".main__video__btn").style.display =
+                "none";
               const video = document.getElementById("video");
               if (video.paused) video.play();
               else video.pause();
-              document.querySelector(".main__video__btn").style.display =
-                "none";
             }}
           >
             <svg width="36" height="41" viewBox="0 0 36 41" fill="none">
