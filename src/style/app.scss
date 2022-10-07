@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 $primary: #efefef;
 $secondary: #b04600;
@@ -9,7 +10,6 @@ $color: #1e1e1e;
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Jost", sans-serif;
 }
 body {
   margin: 0;
@@ -111,6 +111,7 @@ body {
   border: none;
   cursor: pointer;
   transition: 300ms ease-in-out;
+  font-family: "Jost", sans-serif;
 }
 .nav__contant__links:hover {
   background-color: $secondary;
@@ -126,9 +127,8 @@ body {
   width: 100%;
   padding-top: 2.4em;
 }
-.landingsecond__main__banner{
+.landingsecond__main__banner {
   width: 100%;
-
   padding-top: 11em;
 }
 
@@ -145,7 +145,7 @@ body {
 .videosecond__pause__wraper__pic img {
   height: 10px;
 }
-.videosecond__pause__wraper{
+.videosecond__pause__wraper {
   position: relative;
   width: 70%;
   height: 100%;
@@ -153,8 +153,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-border-bottom-right-radius: 60px;
-border-top-left-radius:60px ;
+  border-bottom-right-radius: 60px;
+  border-top-left-radius: 60px;
 
   max-height: 350px;
   overflow: hidden;
@@ -230,6 +230,7 @@ border-top-left-radius:60px ;
   font-weight: 600;
   color: $secondary;
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 .about__overlay__laft__contant__heading__upper::after {
   position: absolute;
@@ -247,11 +248,13 @@ border-top-left-radius:60px ;
   width: 55%;
   line-height: 36px;
   margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
 }
 .about__overlay__laft__contant__sub__heading {
   width: 100%;
   max-width: 95%;
   line-height: 20px;
+  font-family: "Jost", sans-serif;
 }
 .about__overlay__right__contant {
   width: 50%;
@@ -320,6 +323,7 @@ border-top-left-radius:60px ;
   color: $primary;
   margin-top: 3.5em;
   margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
 }
 .products__contant__wraper__cards__containaer {
   width: 100%;
@@ -328,7 +332,7 @@ border-top-left-radius:60px ;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  margin-bottom: -4em;
+  margin-bottom: -3em;
 }
 .products__contant__wraper__card {
   width: 30%;
@@ -370,12 +374,15 @@ border-top-left-radius:60px ;
   font-size: 20px;
   font-weight: 600;
   margin: 14px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .products__contant__wraper__card__sub__heading {
   font-size: 14px;
   line-height: 17px;
-  padding: 1em 0.5em;
+  padding: 1.5em 0.8em;
   padding-top: 0;
+  font-family: "Jost", sans-serif;
+  text-align: justify;
 }
 .landing__services__section {
   width: 100%;
@@ -404,6 +411,7 @@ border-top-left-radius:60px ;
   font-size: 34px;
   font-weight: 700;
   margin: 2em 0em;
+  font-family: "Montserrat", sans-serif;
 }
 .services__cards__container {
   top: 0;
@@ -448,16 +456,19 @@ border-top-left-radius:60px ;
   transform: translateY(90px);
   width: 100%;
   max-width: 200px;
+  font-family: "Montserrat", sans-serif;
 }
 .services__card__sub__heading {
   color: $primary;
   line-height: 20px;
   transform: translateY(90px);
   opacity: 0;
+  font-family: "Jost", sans-serif;
 }
 .services__card__contant:hover .services__card__heading {
   transition: 300ms ease-in-out;
   transform: translateY(-10px);
+  font-family: "Jost", sans-serif;
 }
 .services__card__contant:hover .services__card__sub__heading {
   transition: 300ms ease-in-out;
@@ -495,20 +506,24 @@ border-top-left-radius:60px ;
   font-size: 34px;
   color: $secondary;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   padding: 12px 0px;
 }
 .sustain__section__contant__sub__heading {
   line-height: 24px;
+  font-family: "Jost", sans-serif;
 }
 .sustain__section__contant__sub__heading__points {
   display: flex;
   flex-direction: column;
+  font-family: "Jost", sans-serif;
   margin-top: 1em;
   padding-left: 1em;
 }
 .sustain__section__contant__sub__heading__points__item {
   margin: 9px 0px;
   font-weight: 700;
+  font-family: "Jost", sans-serif;
   position: relative;
 }
 .sustain__section__contant__sub__heading__points__item::after {
@@ -530,7 +545,8 @@ border-top-left-radius:60px ;
   background-size: cover;
 }
 .sustain__section__img img {
-  height: 650px;
+  height: 100%;
+  max-height: 700px;
 }
 .quotation__about__wraper {
   width: 100%;
@@ -573,13 +589,16 @@ border-top-left-radius:60px ;
   line-height: 36px;
   text-align: center;
   margin: 0.5em 0em;
+  font-family: "Montserrat", sans-serif;
 }
 .qua__right__contant__heading span {
   color: #e9662f;
+  font-family: "Montserrat", sans-serif;
 }
 .qua__right__contant__sub__heading {
   text-align: center;
   line-height: 20px;
+  font-family: "Jost", sans-serif;
 }
 .about__swiper__container {
   width: 100%;
@@ -629,6 +648,7 @@ border-top-left-radius:60px ;
   font-size: 34px;
   font-weight: 700;
   margin: 12px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .police__right__contant__sub__heading {
   display: flex;
@@ -636,6 +656,7 @@ border-top-left-radius:60px ;
   line-height: 24px;
   font-size: 18px;
   max-width: 80%;
+  font-family: "Jost", sans-serif;
 }
 
 .footer__containe {
@@ -727,9 +748,11 @@ border-top-left-radius:60px ;
   font-weight: 800;
   padding: 0.6em 0em;
   line-height: 34px;
+  font-family: "Montserrat", sans-serif;
 }
 .about__section__container__right__contant__sub__heading {
   line-height: 20px;
+  font-family: "Jost", sans-serif;
 }
 .contact__main__banner {
   width: 100%;
@@ -761,6 +784,7 @@ border-top-left-radius:60px ;
   font-size: 34px;
   font-size: 800;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .contact__cards__container {
   width: 100%;
@@ -790,6 +814,7 @@ border-top-left-radius:60px ;
 .contact__card__heading {
   font-weight: 700;
   font-size: 24px;
+  font-family: "Montserrat", sans-serif;
 }
 .contact__card:hover {
   background-color: $secondary;
@@ -798,6 +823,9 @@ border-top-left-radius:60px ;
 }
 .contact__card:hover * {
   color: white;
+}
+.contact__card__text {
+  font-family: "Jost", sans-serif;
 }
 .contact__map__main__container {
   width: 100%;
@@ -835,7 +863,6 @@ border-top-left-radius:60px ;
   border-top-right-radius: 275px;
   background-size: cover;
   background-color: rgba(0, 0, 139, 0.548);
-
 }
 
 .footer__contant__container {
@@ -870,12 +897,14 @@ border-top-left-radius:60px ;
   max-width: 300px;
   margin-top: 1em;
   color: white;
+  font-family: "Jost", sans-serif;
 }
 .footer__contact__col__heading {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 1em;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .footer__contact__col__link {
   text-decoration: none;
@@ -883,6 +912,7 @@ border-top-left-radius:60px ;
   position: relative;
   margin: 9px 0px;
   margin-left: 2em;
+  font-family: "Jost", sans-serif;
 }
 .footer__contact__col__link:hover {
   transition: 300ms ease-in-out;
@@ -995,11 +1025,10 @@ border-top-left-radius:60px ;
   background-color: #464646;
   border-radius: 100px;
   transition: 300ms ease-in-out;
-
 }
 .vision__container__vision__boderline {
   border: 1px solid black;
-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
   padding: 1em;
   height: 180px;
   width: 180px;
@@ -1014,7 +1043,6 @@ transition: 300ms ease-in-out;
 .vision__container__vision__svg:hover {
   background-color: #b04600;
   transition: 300ms ease-in-out;
-
 }
 .vision__container__vision__svg svg {
   height: 450px;
@@ -1023,7 +1051,7 @@ transition: 300ms ease-in-out;
   padding: 1em;
   z-index: 1;
 }
- .vision__container__vision__svg::before {
+.vision__container__vision__svg::before {
   position: absolute;
   content: "";
   background-color: $secondary;
@@ -1033,12 +1061,7 @@ transition: 300ms ease-in-out;
   border-radius: 90px;
   display: none;
   transition: 300ms ease-in-out;
-
-  
-
 }
-
-
 
 .vision__container__vision__svg::before {
   position: absolute;
@@ -1060,11 +1083,13 @@ transition: 300ms ease-in-out;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 0.4em;
+  font-family: "Montserrat", sans-serif;
 }
 .vision__container__vision__info {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  font-family: "Jost", sans-serif;
 }
 .about__team__section {
   width: 100%;
@@ -1080,6 +1105,7 @@ transition: 300ms ease-in-out;
   justify-content: center;
   font-size: 30px;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 .about__team__section__wraper {
   width: 100%;
@@ -1104,9 +1130,11 @@ transition: 300ms ease-in-out;
   font-size: 24px;
   font-weight: 600;
   margin: 22px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .about__team__section__wraper__card__info {
   line-height: 20px;
+  font-family: "Jost", sans-serif;
 }
 .Strategic__container {
   width: 100%;
@@ -1137,11 +1165,13 @@ transition: 300ms ease-in-out;
   width: 50%;
   line-height: 30px;
   margin: 0.6em 0em;
+  font-family: "Montserrat", sans-serif;
 }
 .Strategic__container__contant__text__sun__heading {
   font-size: 18px;
   line-height: 22px;
   width: 80%;
+  font-family: "Jost", sans-serif;
 }
 .Strategic__container__contant__img {
   width: 50%;
@@ -1161,11 +1191,13 @@ transition: 300ms ease-in-out;
   align-items: center;
   justify-content: center;
   margin: 2em 0em;
+  font-family: "Montserrat", sans-serif;
 }
 .Vendor__card__wraper__info {
   font-weight: 600;
   margin: 7px 0px;
   font-size: 18px;
+  font-family: "Jost", sans-serif;
 }
 .Vendor__card__wraper {
   width: 100%;
@@ -1174,11 +1206,10 @@ transition: 300ms ease-in-out;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   height: 300px;
 }
-.Vendor__card__wraper:hover{
-
+.Vendor__card__wraper:hover {
   transform: scale(1.11);
 }
 
@@ -1258,6 +1289,10 @@ transition: 300ms ease-in-out;
   margin: 6px 0px;
   font-weight: 600;
   color: $secondary;
+  font-family: "Montserrat", sans-serif;
+}
+.knitted__card__contant__imfo {
+  font-family: "Jost", sans-serif;
 }
 
 .main__header__swiper {
@@ -1299,6 +1334,7 @@ transition: 300ms ease-in-out;
 }
 .worker__container__left__contant {
   font-size: 18px;
+  font-family: "Jost", sans-serif;
 }
 .worker__container__righr {
   width: 50%;
@@ -1323,6 +1359,7 @@ transition: 300ms ease-in-out;
   color: $secondary;
   opacity: 0.8;
   margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 .knitted__product__container__filter {
   width: 100%;
@@ -1384,6 +1421,7 @@ transition: 300ms ease-in-out;
   font-weight: 800;
   font-size: 700;
   padding: 8px 0px;
+  font-family: "Jost", sans-serif;
 }
 
 .knitted__input__checked__input:hover
@@ -1450,6 +1488,9 @@ transition: 300ms ease-in-out;
     width: 75%;
     font-size: 30px;
   }
+  .sustain__section__img img {
+    max-height: 800px;
+  }
 }
 @media (max-width: 1000px) {
   .services__card__sub__heading {
@@ -1494,6 +1535,9 @@ transition: 300ms ease-in-out;
 
   .about__overlay__laft__contant__heading {
     width: 88%;
+  }
+  .sustain__section__img img {
+    max-height: 650px;
   }
 }
 
@@ -1694,13 +1738,13 @@ transition: 300ms ease-in-out;
   }
 }
 @media (max-width: 550px) {
-  .landingsecond__main__banner{
+  .landingsecond__main__banner {
     padding-top: 7em;
     padding-bottom: 2em;
-      }
-      .videosecond__pause__wraper{
-        width: 90%;
-      }
+  }
+  .videosecond__pause__wraper {
+    width: 90%;
+  }
   .knitted__product__container__filter__card__svg svg {
     height: 60px;
   }
@@ -1731,6 +1775,7 @@ transition: 300ms ease-in-out;
   }
   .knitted__card__contant__imfo {
     font-weight: 14px;
+    font-family: "Jost", sans-serif;
   }
   .knitted__card__wraper__svg svg {
     height: 50px;
