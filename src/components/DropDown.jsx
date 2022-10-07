@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ClickAwayListener from "react-click-away-listener";
 
 export default function Dropdown({ setIsDropDownOpen }) {
@@ -10,7 +10,7 @@ export default function Dropdown({ setIsDropDownOpen }) {
       }}
     >
       <div className="dropdown__list__nav">
-        <Link
+        <NavLink
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
@@ -29,8 +29,8 @@ export default function Dropdown({ setIsDropDownOpen }) {
             </svg>
           </div>
           Knitted
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
@@ -60,8 +60,8 @@ export default function Dropdown({ setIsDropDownOpen }) {
             </svg>
           </div>
           Worker
-        </Link>
-        <Link className="dropdown__link" to="/woven">
+        </NavLink>
+        <NavLink className="dropdown__link" to="/woven">
           <div className="dropdown__svg">
             <svg
               width="139"
@@ -83,7 +83,7 @@ export default function Dropdown({ setIsDropDownOpen }) {
             </svg>
           </div>
           Woven
-        </Link>
+        </NavLink>
       </div>
     </ClickAwayListener>
   );

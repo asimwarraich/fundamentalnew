@@ -21,29 +21,48 @@ body {
 .dropdown__list__nav {
   position: absolute;
   top: 4.5em;
-  right: 6em;
   border-radius: 5px;
   display: flex;
+  left: 0;
+  right: 0;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   background-color: #efefef;
-  padding: 1em 0.5em;
+  padding: 4em 8em;
+  max-width: 1900px;
+  margin: 0 auto;
+  animation: dropdown__list__nav__animation 500ms both;
+  transform-origin: top;
+}
+@keyframes dropdown__list__nav__animation {
+  from {
+    opacity: 0;
+    top: 4em;
+    transform: scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    top: 5em;
+    transform: scaleY(1);
+  }
 }
 .dropdown__svg svg {
-  height: 30px;
-  width: 30px;
-  margin-right: 1em;
+  height: 80px;
+  width: 80px;
 }
 .dropdown__link {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 600;
   text-decoration: none;
   color: black;
   margin: 0px 12px;
   font-size: 18px;
   padding: 0.5em 1em;
+  border-radius: 5px;
 }
 .dropdown__link:hover {
   color: $secondary;
@@ -92,7 +111,6 @@ body {
   height: 60px;
 }
 .nav__bar__contant {
-  position: relative;
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
@@ -235,17 +253,18 @@ body {
 .about__overlay__laft__contant__heading__upper::after {
   position: absolute;
   content: "";
-  top: 50%;
-  left: -14%;
+  top: 10px;
+  left: -300px;
   height: 4px;
-  width: 90px;
+  width: 290px;
   border-radius: 20px;
   background-color: $secondary;
 }
 .about__overlay__laft__contant__heading {
   font-size: 32px;
   font-weight: 700;
-  width: 55%;
+  width: 100%;
+  max-width: 400px;
   line-height: 36px;
   margin-bottom: 12px;
   font-family: "Montserrat", sans-serif;
@@ -1440,6 +1459,7 @@ body {
   .knitted__product__container__filter__card__svg {
   color: white !important;
 }
+
 @media (max-width: 1200px) {
   .police__overlay img {
     height: 385px;
@@ -1481,11 +1501,7 @@ body {
     margin: 16px;
   }
 
-  .about__overlay__laft__contant__heading__upper::after {
-    top: 90%;
-  }
   .about__overlay__laft__contant__heading {
-    width: 75%;
     font-size: 30px;
   }
   .sustain__section__img img {
@@ -1531,10 +1547,6 @@ body {
   }
   .about__overlay__right__contant img {
     height: 300px;
-  }
-
-  .about__overlay__laft__contant__heading {
-    width: 88%;
   }
   .sustain__section__img img {
     max-height: 650px;
@@ -1730,9 +1742,6 @@ body {
     height: 600px;
   }
 
-  .about__overlay__laft__contant__heading__upper::after {
-    top: 80%;
-  }
   .video__pause__wraper {
     height: 300px;
   }
@@ -1967,9 +1976,6 @@ body {
     height: 20px;
   }
 
-  .about__overlay__laft__contant__heading__upper::after {
-    display: none;
-  }
   .products__contant__wraper__card {
     width: 80%;
   }

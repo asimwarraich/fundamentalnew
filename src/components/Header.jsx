@@ -85,11 +85,13 @@ export default function Header() {
               </Link>
               <button
                 onClick={() => {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
                   setIsDropDownOpen(!isDropDownOpen);
                 }}
                 className={
-                  isDropDownOpen
+                  isDropDownOpen ||
+                  location.pathname === "/knitted" ||
+                  location.pathname === "/knitted" ||
+                  location.pathname === "/knitted"
                     ? "nav__contant__links active"
                     : "nav__contant__links"
                 }
