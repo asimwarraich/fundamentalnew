@@ -965,17 +965,51 @@ body {
   background-color: #464646;
   border-radius: 100px;
   transition: 300ms ease-in-out;
+
 }
+.vision__container__vision__boderline {
+  border: 1px solid black;
+transition: 300ms ease-in-out;
+  padding: 1em;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  border-radius: 100px;
+  margin: 2em 0em;
+}
+.vision__container__vision__svg:hover .vision__container__vision__boderline {
+  border-color: transparent;
+}
+
 .vision__container__vision__svg:hover {
   background-color: #b04600;
   transition: 300ms ease-in-out;
+
 }
 .vision__container__vision__svg svg {
   height: 450px;
   width: 100px;
+
   padding: 1em;
   z-index: 1;
 }
+ .vision__container__vision__svg::before {
+  position: absolute;
+  content: "";
+  background-color: $secondary;
+  opacity: 0.4;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  display: none;
+  transition: 300ms ease-in-out;
+
+  
+
+}
+
+
+
 .vision__container__vision__svg::before {
   position: absolute;
   content: "";
@@ -987,6 +1021,7 @@ body {
   display: none;
   transition: 300ms ease-in-out;
 }
+
 .vision__container__vision__svg:hover::before {
   display: flex;
   transition: 300ms ease-in-out;

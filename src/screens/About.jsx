@@ -62,8 +62,8 @@ export default function About() {
               data-aos-duration="800"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
-            >
-              <svg
+          >
+  <div className="vision__container__vision__boderline"></div>              <svg
                 width="81"
                 height="81"
                 viewBox="0 0 81 81"
@@ -102,6 +102,7 @@ export default function About() {
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >
+               <div className="vision__container__vision__boderline"></div>  
               <svg
                 width="80"
                 height="81"
