@@ -103,7 +103,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   padding: 1.5em 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.7em;
   border-bottom-right-radius: 20px;
   color: black;
   margin: 0px 12px;
@@ -126,6 +126,12 @@ body {
   width: 100%;
   padding-top: 2.4em;
 }
+.landingsecond__main__banner{
+  width: 100%;
+
+  padding-top: 11em;
+}
+
 .video__pause__wraper {
   position: relative;
   width: 100%;
@@ -133,7 +139,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 700px;
+  max-height: 600px;
+  overflow: hidden;
+}
+.videosecond__pause__wraper__pic img {
+  height: 10px;
+}
+.videosecond__pause__wraper{
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+border-bottom-right-radius: 60px;
+border-top-left-radius:60px ;
+
+  max-height: 350px;
   overflow: hidden;
 }
 .video__pause__wraper video {
@@ -355,7 +378,7 @@ body {
   width: 100%;
   background: url(../img/aboutimg.png);
   background-size: cover;
-  padding: 4em;
+  padding: 0em 4em;
 }
 .landing__services__container {
   display: flex;
@@ -597,7 +620,7 @@ body {
 .police__overlay img {
   width: 100%;
   height: 440px;
-  margin: 3em;
+  margin: 4em;
 }
 .police__right__contant__heading {
   font-size: 34px;
@@ -638,7 +661,7 @@ body {
   width: 100%;
   background: url(../img/aboutimg.png);
   background-size: cover;
-  padding: 4em 0em;
+  padding: 5em 0em;
 }
 
 .about__section__wraper {
@@ -712,12 +735,12 @@ body {
 
 .contact__banner__img img {
   width: 100%;
-  height: 400px;
+  height: 550px;
   object-fit: cover;
 }
 .contact__overlay {
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -758,7 +781,7 @@ body {
   border-radius: 14px;
 }
 .contact__card__svg svg {
-  height: 70px;
+  height: 60px;
   margin-top: 2em;
 }
 .contact__card__heading {
@@ -806,13 +829,16 @@ body {
   width: 100%;
   position: relative;
   background: url("../img/footerbg.png");
-  border-top-right-radius: 200px;
+  border-top-right-radius: 275px;
   background-size: cover;
+  background-color: rgba(0, 0, 139, 0.548);
+
 }
 
 .footer__contant__container {
   width: 100%;
   display: flex;
+
   align-items: flex-start;
   justify-content: space-between;
   color: white;
@@ -857,7 +883,8 @@ body {
 }
 .footer__contact__col__link:hover {
   transition: 300ms ease-in-out;
-  color: $secondary;
+  color: white;
+  text-decoration: underline;
 }
 
 .footer__contact__col__link::before {
@@ -868,7 +895,7 @@ body {
   width: 12px;
   border-radius: 50px;
   height: 12px;
-  background-color: $secondary;
+  background-color: white;
   transition: 300ms ease-in-out;
 }
 .footer__contact__col__link__info {
@@ -923,7 +950,7 @@ body {
   width: 100%;
   background: url(../img/aboutimg.png);
   background-size: cover;
-  padding: 7em 0em;
+  padding: 5em 0em;
 }
 
 .vision__and__mission {
@@ -965,17 +992,51 @@ body {
   background-color: #464646;
   border-radius: 100px;
   transition: 300ms ease-in-out;
+
 }
+.vision__container__vision__boderline {
+  border: 1px solid black;
+transition: 300ms ease-in-out;
+  padding: 1em;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  border-radius: 100px;
+  margin: 2em 0em;
+}
+.vision__container__vision__svg:hover .vision__container__vision__boderline {
+  border-color: transparent;
+}
+
 .vision__container__vision__svg:hover {
   background-color: #b04600;
   transition: 300ms ease-in-out;
+
 }
 .vision__container__vision__svg svg {
   height: 450px;
   width: 100px;
+
   padding: 1em;
   z-index: 1;
 }
+ .vision__container__vision__svg::before {
+  position: absolute;
+  content: "";
+  background-color: $secondary;
+  opacity: 0.4;
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  display: none;
+  transition: 300ms ease-in-out;
+
+  
+
+}
+
+
+
 .vision__container__vision__svg::before {
   position: absolute;
   content: "";
@@ -987,6 +1048,7 @@ body {
   display: none;
   transition: 300ms ease-in-out;
 }
+
 .vision__container__vision__svg:hover::before {
   display: flex;
   transition: 300ms ease-in-out;
@@ -1086,7 +1148,8 @@ body {
 }
 .Vendor__container {
   width: 100%;
-  padding: 7em 0em;
+  padding: 1em 0em;
+  padding-bottom: 4em;
 }
 .Vendor__container__heading {
   font-size: 30px;
@@ -1104,10 +1167,18 @@ body {
 .Vendor__card__wraper {
   width: 100%;
   display: flex;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all .4s ease-in-out;
+  height: 300px;
 }
+.Vendor__card__wraper:hover{
+
+  transform: scale(1.11);
+}
+
 .vendor__card__wraper__container {
   display: flex;
   display: flex;
@@ -1603,6 +1674,13 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .landingsecond__main__banner{
+    padding-top: 7em;
+    padding-bottom: 2em;
+      }
+      .videosecond__pause__wraper{
+        width: 90%;
+      }
   .knitted__product__container__filter__card__svg svg {
     height: 60px;
   }
@@ -1718,7 +1796,7 @@ body {
     font-size: 24px;
   }
   .contact__banner__img img {
-    height: 300px;
+    height: 350px;
   }
 
   .about__overlay__laft__contant__heading {

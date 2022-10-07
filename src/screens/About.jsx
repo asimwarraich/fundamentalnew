@@ -9,13 +9,13 @@ import VendorSwiper from "../components/VendorSwiper";
 import pak from "../img/pak.png";
 import uk from "../img/uk.png";
 import { LandingServicesSection } from "./LandingServicesSection";
-import { Jumbotron } from "./Jumbotron";
+import { Jumbotronsecond } from "./Jumbotronsecond";
 
 export default function About() {
   return (
     <>
       <Header />
-      <Jumbotron />
+      <Jumbotronsecond />
       <div className="about__section__container">
         <div className="about__section__wraper">
           <div
@@ -59,11 +59,11 @@ export default function About() {
           <div className="vision__container__left">
             <div
               data-aos="fade-up"
-              data-aos-duration="800"
+              data-aos-duration="400"
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
-            >
-              <svg
+          >
+  <div className="vision__container__vision__boderline"></div>              <svg
                 width="81"
                 height="81"
                 viewBox="0 0 81 81"
@@ -102,6 +102,7 @@ export default function About() {
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >
+               <div className="vision__container__vision__boderline"></div>  
               <svg
                 width="80"
                 height="81"
