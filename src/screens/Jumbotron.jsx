@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import videosecond from "../img/videosecond.mp4";
 import banner from "../img/banner.png";
 
 export function Jumbotron() {
   const [isVideo, setIsVideo] = React.useState(false);
+  useEffect(() => {
+    const video = document.getElementById("video");
+    if (isVideo) video?.play();
+    else video?.pause();
+  }, [isVideo]);
   return (
     <div className="landing__main__banner">
       <div className="video__pause__wraper">
-        {isVideo ? (
-          <video src={videosecond} type="video/mp4" id="video" />
-        ) : (
-          <img src={banner} alt="banner" />
-        )}
+        <video
+          src={videosecond}
+          type="video/mp4"
+          id="video"
+          muted
+          style={{ zIndex: isVideo ? 1 : -1 }}
+        />
+
+        <img src={banner} alt="banner" />
+
         <div className="main__video__btn__container">
           <button
             className="main__video__btn"
@@ -20,9 +30,6 @@ export function Jumbotron() {
               setIsVideo(true);
               document.querySelector(".main__video__btn").style.display =
                 "none";
-              const video = document.getElementById("video");
-              if (video.paused) video.play();
-              else video.pause();
             }}
           >
             <svg width="36" height="41" viewBox="0 0 36 41" fill="none">
