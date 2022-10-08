@@ -37,9 +37,7 @@ export default function Footer() {
           >
             About
           </NavLink>
-          <NavLink to="/" className="footer__contact__col__link">
-            Why
-          </NavLink>
+
           <NavLink to="/" className="footer__contact__col__link">
             Services
           </NavLink>
