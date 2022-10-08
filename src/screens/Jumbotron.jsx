@@ -17,6 +17,7 @@ export function Jumbotron() {
           type="video/mp4"
           id="video"
           muted
+          loop
           style={{ zIndex: isVideo ? 1 : -1 }}
         />
 

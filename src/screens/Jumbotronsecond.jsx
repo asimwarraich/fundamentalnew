@@ -16,6 +16,8 @@ export function Jumbotronsecond() {
           src={videosecond}
           type="video/mp4"
           id="video"
+          loop
+          muted
           style={{ zIndex: isVideo ? 1 : -1 }}
         />
         <img src={banner} alt="banner" />

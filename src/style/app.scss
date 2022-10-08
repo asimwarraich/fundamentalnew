@@ -155,7 +155,7 @@ body {
 .video__pause__wraper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +190,7 @@ body {
   min-width: 100%;
 }
 .videosecond__pause__wraper video {
+  width: 100%;
   position: absolute;
   top: 0px;
   z-index: 1;
