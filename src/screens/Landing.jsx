@@ -140,12 +140,12 @@ export default function Landing() {
           </div>
           <div className="qua__contant__text">
             <div className="qua__right__contant__heading">
-              Quotation about <span>Textile Industry</span>
-            </div>
-            <div className="qua__right__contant__sub__heading">
-              “Work on good prose has three steps: a musical stage when it is
-              composed, an architectonic one when it is built, and a textile one
-              when it is woven.”
+              <span>
+                “Work on good prose has three steps: a musical stage when it is
+                composed,
+              </span>{" "}
+              an architectonic one when it is built, and a textile one when it
+              is woven.”
             </div>
           </div>
         </div>

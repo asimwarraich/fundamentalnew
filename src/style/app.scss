@@ -606,7 +606,7 @@ body {
 
 .qua__img__left {
   position: relative;
-  margin-right: -2em;
+  margin-right: -3em;
   z-index: 1;
 }
 .qua__img__left img {
@@ -617,6 +617,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0em 2em;
 }
 
 .qua__overlay img {
@@ -633,9 +634,9 @@ body {
   padding: 1em 2em;
 }
 .qua__right__contant__heading {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
-  width: 80%;
+  width: 100%;
   line-height: 36px;
   text-align: center;
   margin: 0.5em 0em;
@@ -910,6 +911,7 @@ body {
 }
 .footer__main__container {
   width: 100%;
+  min-height: 320px;
   position: relative;
   background: url("../img/footerbg.png");
   border-top-right-radius: 295px;
@@ -1856,6 +1858,7 @@ body {
 
   .qua__overlay img {
     height: 300px;
+    width: 110%;
   }
   .products__contant__wraper__card__heading {
     margin: 7px 0px;
@@ -1944,6 +1947,14 @@ body {
   .sustain__section {
     min-height: 1390px;
   }
+  .qua__right__contant__heading {
+    font-size: 16px;
+  }
+  .qua__contant__text {
+    top: 25%;
+    padding: 1em 1.5em;
+    margin-left: 2.2em;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1955,14 +1966,6 @@ body {
   }
   .sustain__section {
     min-height: 1350px;
-  }
-  .qua__contant__text {
-    top: 18%;
-    padding: 1em 1em;
-  }
-  .qua__contant__text {
-    top: 20%;
-    padding: 1em 1.5em;
   }
 }
 @media (max-width: 550px) {
@@ -2119,11 +2122,20 @@ body {
   .footer__main__container {
     border-top-right-radius: 230px;
   }
-  .qua__contant__text {
-    top: 18%;
-    padding: 1em 1em;
-  }
+
   .about__police__contant__text {
     top: 17%;
+  }
+  .qua__contant__text {
+    top: 22%;
+  }
+}
+@media (max-width: 370px) {
+  .sustain__section {
+    height: 1580px;
+    min-height: 1550px;
+  }
+  .qua__contant__text {
+    top: 20%;
   }
 }

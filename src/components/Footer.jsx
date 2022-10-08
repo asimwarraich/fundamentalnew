@@ -37,30 +37,20 @@ export default function Footer() {
           >
             About
           </NavLink>
-
-          <NavLink to="/" className="footer__contact__col__link">
-            Services
-          </NavLink>
-          <NavLink to="/" className="footer__contact__col__link">
-            Work
-          </NavLink>
-          <NavLink to="/" className="footer__contact__col__link">
-            Quotation
+          <NavLink to="/Contact" className="footer__contact__col__link">
+            Contact Us
           </NavLink>
         </div>
         <div className="footer__contact__col">
           <div className="footer__contact__col__heading">Services</div>
           <NavLink to="/" className="footer__contact__col__link">
-            Product Research & Development
+            Knitted
           </NavLink>
           <NavLink to="/" className="footer__contact__col__link">
-            In-Line Quality Inspections
+            Worker
           </NavLink>
           <NavLink to="/" className="footer__contact__col__link">
-            Production Follow Up
-          </NavLink>
-          <NavLink to="/" className="footer__contact__col__link">
-            Your One-Stop Shop
+            Woven
           </NavLink>
         </div>
         <div className="footer__contact__col">
