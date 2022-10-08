@@ -5,6 +5,7 @@ import prologo from "../img/prologo.png";
 import subimg from "../img/subimg.png";
 import qua from "../img/qua.png";
 import quaover from "../img/quaover.png";
+import subbg from "../img/subbg.png";
 import Footer from "../components/Footer";
 import HomeProductsCard from "../components/HomeProductsCard";
 import { LandingServicesSection } from "./LandingServicesSection";
@@ -208,6 +209,9 @@ export default function Landing() {
           >
             <img src={subimg} alt="SUSTAINABILITY" />
           </div>
+        </div>
+        <div className="sustainability__bg__img__right">
+          <img src={subbg} alt="" />
         </div>
       </div>
       <Footer />

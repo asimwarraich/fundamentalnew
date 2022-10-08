@@ -5,7 +5,7 @@ import servicecardone from "../img/servicecardone.png";
 import servicecardtwo from "../img/servicecardtwo.png";
 import servicecardthre from "../img/servicecardthre.png";
 
-export function LandingServicesSection() {
+export function LandingServicesSection({ distance }) {
   const [slidesPerView, setSlidesPerView] = useState(4);
   function changeSlidesPerView() {
     if (window.innerWidth < 700) {
@@ -27,6 +27,7 @@ export function LandingServicesSection() {
     <div className="landing__services__section">
       <div className="landing__services__container">
         <div
+          style={distance ? { marginTop: "3.5em" } : { marginTop: "4.5em" }}
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-easing="ease-in-out"

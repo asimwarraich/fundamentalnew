@@ -90,8 +90,8 @@ export default function Header() {
                 className={
                   isDropDownOpen ||
                   location.pathname === "/knitted" ||
-                  location.pathname === "/knitted" ||
-                  location.pathname === "/knitted"
+                  location.pathname === "/worker" ||
+                  location.pathname === "/woven"
                     ? "nav__contant__links active"
                     : "nav__contant__links"
                 }
