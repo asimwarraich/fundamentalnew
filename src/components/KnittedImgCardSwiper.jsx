@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import KnittedImgCard from "./KnittedImgCard";
-import knitedone from "../img/knitedone.png";
-import knittedtwo from "../img/knittedtwo.png";
-import knittedthree from "../img/knittedthree.png";
-import { data } from "../data";
 
-export default function KnittedImgCardSwiper() {
+export default function KnittedImgCardSwiper({ data }) {
   const [slidesPerView, setSlidesPerView] = useState(7);
   function changeSlidesPerView() {
     if (window.innerWidth < 600) {
