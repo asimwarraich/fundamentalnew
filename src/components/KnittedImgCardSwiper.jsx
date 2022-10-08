@@ -4,6 +4,7 @@ import KnittedImgCard from "./KnittedImgCard";
 import knitedone from "../img/knitedone.png";
 import knittedtwo from "../img/knittedtwo.png";
 import knittedthree from "../img/knittedthree.png";
+import { data } from "../data";
 
 export default function KnittedImgCardSwiper() {
   const [slidesPerView, setSlidesPerView] = useState(7);
@@ -27,39 +28,13 @@ export default function KnittedImgCardSwiper() {
   return (
     <div className="main__header__swiper">
       <Swiper spaceBetween={10} slidesPerView={slidesPerView}>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knittedtwo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knittedthree} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knittedtwo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knittedthree} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <KnittedImgCard img={knitedone} />
-        </SwiperSlide>
+        {data.map((item) => {
+          return (
+            <SwiperSlide>
+              <KnittedImgCard img={item} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );
