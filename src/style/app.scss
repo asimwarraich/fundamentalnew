@@ -1132,6 +1132,7 @@ body {
 .vision__container__vision__svg:hover::before {
   display: flex;
   transition: 300ms ease-in-out;
+  border-radius: 150px;
 }
 .vision__container__vision__title {
   font-size: 30px;
