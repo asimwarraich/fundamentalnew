@@ -26,36 +26,27 @@ export const data = [
   pic9,
   pic10,
   pic11,
-  pic12,
-  pic13,
   pic14,
   pic15,
 ];
 export const productRangeTshirt = [
   pic1,
   pic2,
-  pic3,
-  pic4,
+  pic12,
+  pic13,
   pic5,
   pic6,
   pic7,
-  pic8,
+  pic14,
+  pic15,
 ];
-export const productRangePolo = [
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-  pic8,
-];
+export const productRangePolo = [pic1, pic2, pic5, pic6, pic14, pic8];
 export const productRangeHoodies = [
-  pic1,
-  pic2,
-  pic3,
-  pic4,
+  pic9,
+  pic10,
+  pic11,
+  pic14,
+  pic15,
   pic5,
   pic6,
   pic7,
@@ -64,22 +55,21 @@ export const productRangeHoodies = [
 export const productRangeSweatShirts = [
   pic1,
   pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
+  pic10,
+  pic11,
+  pic14,
+  pic15,
   pic7,
-  pic8,
 ];
 export const productRangejogShirt = [
   pic1,
   pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
+  pic9,
+  pic10,
   pic8,
+  pic14,
+  pic15,
+  pic7,
 ];
 
 export const FabricSignalJersey = [pic1];
@@ -94,10 +84,19 @@ export const FabricStretchJersey = [
   pic8,
 ];
 export const FabricRib = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-export const FabricInterLock = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-export const FabricFleece = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-export const FabricFrench = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-export const FabricTerry = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-export const FabricPique = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+export const FabricInterLock = [pic1, pic2, pic5, pic6, pic7, pic8];
+export const FabricFleece = [pic3, pic4, pic5, pic6, pic8];
+export const FabricFrench = [
+  pic1,
+  pic2,
+  pic10,
+  pic11,
+  pic3,
+  pic4,
+  pic14,
+  pic15,
+];
+export const FabricTerry = [pic1, pic2, pic3, pic6, pic7, pic8];
+export const FabricPique = [pic1, pic8, pic2, pic3, pic4, pic5, pic6, pic7];
 export const FabricThermal = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const FabricStructured = [pic1, pic2, pic3, pic4, pic5];

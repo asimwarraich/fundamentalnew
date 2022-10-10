@@ -10,8 +10,6 @@ import {
   FabricRib,
   FabricInterLock,
   FabricFleece,
-  FabricFrench,
-  FabricTerry,
 } from "../data";
 export default function Woven() {
   return (
@@ -184,7 +182,7 @@ export default function Woven() {
               </svg>
             ),
             title: "Work Shirts",
-            data: productRangeTshirt,
+            data: FabricSignalJersey,
           },
           {
             svg: (
@@ -214,7 +212,7 @@ export default function Woven() {
               </svg>
             ),
             title: "Trousers",
-            data: productRangeTshirt,
+            data: FabricRib,
           },
           {
             svg: (
@@ -252,7 +250,7 @@ export default function Woven() {
               </svg>
             ),
             title: "Shorts",
-            data: productRangeTshirt,
+            data: FabricInterLock,
           },
           {
             svg: (
@@ -270,7 +268,7 @@ export default function Woven() {
               </svg>
             ),
             title: "Denim",
-            data: productRangeTshirt,
+            data: FabricFleece,
           },
         ]}
       />

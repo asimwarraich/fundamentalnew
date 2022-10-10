@@ -14,11 +14,11 @@ import {
   FabricFrench,
   FabricTerry,
   FabricPique,
-  FabricThermal,
   FabricStructured,
   productRangePolo,
   productRangeHoodies,
   productRangeSweatShirts,
+  productRangejogShirt,
 } from "../data";
 import { ProductShowCase } from "../components/ProductShowCase";
 
@@ -138,6 +138,7 @@ export default function Knitted() {
         </div>
       </div>
       <ProductShowCase
+        top={true}
         title="Product Range"
         list={[
           {
@@ -252,7 +253,7 @@ export default function Knitted() {
               </svg>
             ),
             title: "Jog Pants",
-            data: productRangeSweatShirts,
+            data: productRangejogShirt,
           },
         ]}
       />
