@@ -90,6 +90,7 @@ export default function Woven() {
         </div>
       </div>
       <ProductShowCase
+        top={true}
         title="Product Range"
         list={[
           {
