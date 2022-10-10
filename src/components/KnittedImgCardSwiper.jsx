@@ -26,7 +26,7 @@ export default function KnittedImgCardSwiper({ data }) {
       <Swiper spaceBetween={10} slidesPerView={slidesPerView}>
         {data.map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item}>
               <KnittedImgCard img={item} />
             </SwiperSlide>
           );

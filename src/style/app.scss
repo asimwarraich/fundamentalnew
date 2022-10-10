@@ -1395,9 +1395,11 @@ body {
 }
 .worker__container__righr {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .worker__container__righr img {
-  height: 500px;
+  height: 550px;
 }
 .knitted__product__container {
   width: 100%;

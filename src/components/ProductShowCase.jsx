@@ -14,6 +14,7 @@ export function ProductShowCase({ title, list, top }) {
         {list.map((item, index) => (
           <KnittedProductIntry
             svg={item.svg}
+            key={index}
             title={item.title}
             defaultChecked={index === 0 ? true : false}
             onClick={() => {
