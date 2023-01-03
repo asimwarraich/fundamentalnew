@@ -71,7 +71,7 @@ export default function Landing() {
                 </svg>
               }
               title="Knitted Garments "
-              text="We have always emphasised on the supply of quality products at competitive prices with innovative products ideas."
+              text="This season FTL have proudly introduced vast ranging sustainable products including T-Shirts & Polo’s, Hoodies & Sweat Shirts, Pants & Shorts, and leggings in sustainable blends."
             />
             <HomeProductsCard
               to="./woven"
@@ -90,7 +90,8 @@ export default function Landing() {
                 </svg>
               }
               title="Woven Garments"
-              text="We have always emphasised on the supply of quality products at competitive prices with innovative products ideas."
+              text="In fast changing world–fast fashion requires options and FTL have got you covered with unlimited choices to choose from. 
+              Fundamental Textiles is delivering a complete range of woven garments which includes Casual Shirts & Work Shirts, Trouser &Shorts and Denim & Jackets"
             />
             <HomeProductsCard
               to="./worker"
@@ -143,7 +144,7 @@ export default function Landing() {
               <span>
                 “Work on good prose has three steps: a musical stage when it is
                 composed,
-              </span>{" "}
+              </span>
               an architectonic one when it is built, and a textile one when it
               is woven.”
             </div>
@@ -169,22 +170,23 @@ export default function Landing() {
               fair trade practices. This is achieved by using ethical raw
               materials i.e. BCI and organic Cotton, Recycled Cotton and
               Recycled polyester, Repreve, Tencel and Eco made Lycra yarns, By
-              adopting the latest sustainability trends in the textile industry.
+              adopting the latest sustainability trends in the textile industry,
+              we hope to:
             </div>
             <div className="sustain__section__contant__sub__heading__points">
               <div className="sustain__section__contant__sub__heading__points__item">
-                Use Minimal natural resources to produce & distribute the final
-                garment.
+                Minimize Landfill wastage as much as possible.
               </div>
               <div className="sustain__section__contant__sub__heading__points__item">
                 Promote sustainable fashion.
               </div>
               <div className="sustain__section__contant__sub__heading__points__item">
-                Support millions of workers to earn fair wages and ensure proper
-                working conditions for them.
+                Use Minimal natural resources to produce & distribute the final
+                garment.
               </div>
               <div className="sustain__section__contant__sub__heading__points__item">
-                Minimize Landfill wastage as much as possible.
+                Support millions of workers to earn fair wages and ensure proper
+                working conditions for them.
               </div>
               <div className="sustain__section__contant__sub__heading__points__item">
                 Create a healthy working environment for the workers to help

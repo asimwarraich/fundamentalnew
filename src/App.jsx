@@ -10,6 +10,9 @@ import AOS from "aos";
 import "./style/app.scss";
 import "aos/dist/aos.css";
 import "swiper/css";
+import ProductResearch from "./screens/ProductResearch";
+import InLineQuailty from "./screens/InLineQuailty";
+import Oneshope from "./screens/OneShope";
 
 function App() {
   AOS.init();
@@ -21,6 +24,9 @@ function App() {
       <Route path="/knitted" element={<Knitted />} />
       <Route path="/worker" element={<Worker />} />
       <Route path="/woven" element={<Woven />} />
+      <Route path="/ProductResearch" element={<ProductResearch />} />
+      <Route path="/InLineQuailty" element={<InLineQuailty />} />
+      <Route path="/Oneshope" element={<Oneshope />} />
     </Routes>
   );
 }

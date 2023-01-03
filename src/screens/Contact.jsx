@@ -93,7 +93,7 @@ export default function Contact() {
             </svg>
           }
           title="Mail"
-          text=" sales@fundamentaltextiles.co.uk"
+          text=" info@fundamentaltextiles.co.uk"
         />
       </div>
       <div className="contact__map__main__container">

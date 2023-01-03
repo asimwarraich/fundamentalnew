@@ -43,10 +43,12 @@ export function LandingServicesSection({ distance }) {
           <Swiper
             className="services__cards__container"
             spaceBetween={40}
+            loop
             slidesPerView={slidesPerView}
           >
             <SwiperSlide>
               <ServicesCard
+                to="/ProductResearch"
                 img={servicecardone}
                 title="Product Research
               & Development "
@@ -55,13 +57,15 @@ export function LandingServicesSection({ distance }) {
             </SwiperSlide>
             <SwiperSlide>
               <ServicesCard
+                to="/InLineQuailty"
                 img={servicecardtwo}
                 title="In-Line Quality Inspections "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
+                text="We take care of your orders right from the yarns stage and till shipping of final garments to your destinations with our fully equipped stringent quality protocols and procedures in place."
               />
             </SwiperSlide>
             <SwiperSlide>
               <ServicesCard
+                to="/Oneshope"
                 img={servicecardthre}
                 title="Your 
               One-Stop Shop   "
@@ -70,25 +74,10 @@ export function LandingServicesSection({ distance }) {
             </SwiperSlide>
             <SwiperSlide>
               <ServicesCard
+                to="/Transparency"
                 img={servicecardone}
-                title="Product Research
-              & Development "
-                text="We at Fundamental Textiles are equipped with the fabric technologists and state-of-art machinery to innovate, invent, initiate & replicate any specific requirement  in textiles, apparels and treatments."
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ServicesCard
-                img={servicecardtwo}
-                title="In-Line Quality Inspections "
-                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable."
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ServicesCard
-                img={servicecardthre}
-                title="Your 
-              One-Stop Shop   "
-                text="Fundamental Textile ensures ready-to-wear clothing and uniforms for industrial clothing, healthcare, uniforms and casual fast-fashion products. You just have to book an order and rest will be taken care by our teams."
+                title="Transparency & Reliability"
+                text="FTL have developed systems where we stay connected with our customers and suppliers, exchanging real time data which helps us mitigating the issues and keeping our supply chain transparent and reliable. "
               />
             </SwiperSlide>
           </Swiper>

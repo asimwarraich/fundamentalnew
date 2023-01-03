@@ -91,8 +91,9 @@ export default function About() {
             </div>
             <div className="vision__container__vision__title">Mission</div>
             <div className="vision__container__vision__info">
-              We are committed to offer quality products to our customers backed
-              by reliable after sales service and smooth delivery of goods.
+              FTL is committed to offering quality products at competitive
+              prices from Pakistan by using our knowledge, local presence, and
+              fulfilling customer requirements through professional services.
             </div>
           </div>
           <div className="mid__line__about__vision"></div>
@@ -131,14 +132,10 @@ export default function About() {
             </div>
             <div className="vision__container__vision__title">Vision</div>
             <div className="vision__container__vision__info">
-              FTL's vision is to become a unique textile-based production and
-              distribution facility that not only follows eco-friendly practices
-              to manufacture and distribute its products itself; but also
-              encourages its partner manufacturers to follow suit as well. We
-              are striving to be a leading sustainable sourcing company for
-              clothing in order to play an active role in conservation of
-              natural resources and reduce carbon foot print for a circular
-              economy and to preserve our mother earth. .
+              FTL is striving to be a leading sustainable sourcing company for
+              clothing in order to play an active role in the conservation of
+              natural resources and reduce the carbon footprint for a circular
+              economy and to preserve our mother earth.
             </div>
           </div>
         </div>

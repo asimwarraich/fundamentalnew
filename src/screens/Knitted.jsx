@@ -65,7 +65,9 @@ export default function Knitted() {
               </svg>
             }
             title="Blends "
-            info="100% Cotton, Poly-Cotton 65/35, PC 50/50, CVC 65:35 and mixture of blends as per the requirements. "
+            info="100% Cotton, Chief Value Cotton 80:20, 70:30,
+            60:40, Poly Cotton 65:35, 50:50, and a mixture of
+            blends as per the requirements."
           />
           <KnittedCard
             svg={
@@ -96,7 +98,9 @@ export default function Knitted() {
               </svg>
             }
             title="Special Finishes "
-            info="Peach finish, Water repellent, Stain resistant, Silicon wash,Anti-pilling, and Enzyme wash. "
+            info="Peach finish, Water repellent, Stain
+            resistant, Silicon wash, Anti-pilling, Singeing, Wicking,
+            Garment wash, and Enzyme wash."
           />
           <KnittedCard
             svg={
@@ -113,9 +117,10 @@ export default function Knitted() {
               </svg>
             }
             title="Embellishments"
-            info="Different techniques of prints, Embroidery & Badges."
+            info="Different techniques of prints,
+            Embroidery, Tapes, and Badges."
           />
-          <KnittedCard
+          {/* <KnittedCard
             svg={
               <svg
                 width="67"
@@ -134,7 +139,7 @@ export default function Knitted() {
             }
             title="Fabrication"
             info="Poplin, Twill, Drill, Satin, Gabardine, Stretch fabric, Yarn-dyed Chambray & Canvas "
-          />
+          /> */}
         </div>
       </div>
       <ProductShowCase
