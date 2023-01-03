@@ -8,7 +8,7 @@ import Strategic from "../img/Strategic.png";
 import VendorSwiper from "../components/VendorSwiper";
 import pak from "../img/pak.png";
 import uk from "../img/uk.png";
-import { LandingServicesSection } from "./LandingServicesSection";
+import { LandingServicesSection } from "../components/LandingServicesSection";
 import { Jumbotronsecond } from "./Jumbotronsecond";
 
 export default function About() {
@@ -63,7 +63,7 @@ export default function About() {
               data-aos-easing="ease-in-out"
               className="vision__container__vision__svg"
             >
-              <div className="vision__container__vision__boderline"></div>{" "}
+              <div className="vision__container__vision__boderline"></div>
               <svg
                 width="81"
                 height="81"

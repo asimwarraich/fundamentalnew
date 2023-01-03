@@ -13,6 +13,7 @@ import "swiper/css";
 import ProductResearch from "./screens/ProductResearch";
 import InLineQuailty from "./screens/InLineQuailty";
 import Oneshope from "./screens/OneShope";
+import Transparency from "./screens/Transparency";
 
 function App() {
   AOS.init();
@@ -27,6 +28,7 @@ function App() {
       <Route path="/ProductResearch" element={<ProductResearch />} />
       <Route path="/InLineQuailty" element={<InLineQuailty />} />
       <Route path="/Oneshope" element={<Oneshope />} />
+      <Route path="/Transparency" element={<Transparency />} />
     </Routes>
   );
 }

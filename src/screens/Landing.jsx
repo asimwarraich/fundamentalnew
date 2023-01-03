@@ -8,8 +8,8 @@ import quaover from "../img/quaover.png";
 import subbg from "../img/subbg.png";
 import Footer from "../components/Footer";
 import HomeProductsCard from "../components/HomeProductsCard";
-import { LandingServicesSection } from "./LandingServicesSection";
-import { Jumbotron } from "./Jumbotron";
+import { LandingServicesSection } from "../components/LandingServicesSection";
+import { Jumbotron } from "../components/Jumbotron";
 
 export default function Landing() {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ServicesCard from "../components/ServicesCard";
+import ServicesCard from "./ServicesCard";
 import servicecardone from "../img/servicecardone.png";
 import servicecardtwo from "../img/servicecardtwo.png";
 import servicecardthre from "../img/servicecardthre.png";
@@ -22,7 +22,6 @@ export function LandingServicesSection({ distance }) {
     changeSlidesPerView();
     window.addEventListener("resize", changeSlidesPerView);
   }, []);
-
   return (
     <div className="landing__services__section">
       <div className="landing__services__container">
@@ -49,6 +48,7 @@ export function LandingServicesSection({ distance }) {
             <SwiperSlide>
               <ServicesCard
                 to="/ProductResearch"
+                
                 img={servicecardone}
                 title="Product Research
               & Development "
