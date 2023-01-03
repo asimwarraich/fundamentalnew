@@ -37,7 +37,7 @@ export default function Header() {
           ? "nav__bar__wraper nav__bar__wraper__active"
           : "nav__bar__wraper"
       }
-    >
+    > 
       <div className="header__nav__bar__container">
         <Link to="/" className="nav__bar__logo">
           <img src={logo} alt="logo" />
